@@ -69,4 +69,7 @@ blockquote {
     font-family: "Bitter", sans-serif;
     font-weight: 400;
     font-size: 26px;
+
+.hero {
+    background-image: url("../img/background.jpg");
 }
