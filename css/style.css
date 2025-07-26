@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display:wght@400..900&family=Roboto:wght@100..900&display=swap');
+
+body {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Playfair Display",  sans-serif;;;
+    font-weight: 600;
+    font-size: 86px;
+}
+
+h2 {
+    font-family: "Playfair Display",  sans-serif;
+    font-weight: 500;
+    font-size: 86px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h4 {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h6 {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+p {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 16px;  
+}
+
+a {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav ul li {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+li {
+    font-family: "Bitter", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+blockquote {
+    font-family: "Bitter", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+
 .hero {
     background-image: url("../img/background.jpg");
 }
