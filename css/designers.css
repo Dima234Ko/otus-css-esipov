@@ -1,0 +1,41 @@
+.designers {
+  height: 677px;
+  position: relative;
+  padding: 60px 0;
+}
+
+
+.slider {
+  display: flex;
+  gap: 30px;
+  padding-left: 120px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider article {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Использовано обращение напрямую к тегу, т.к. это общие св-ва для этого тега */
+
+.slider .main {
+  width: 619px;
+}
+
+.slider .main img {
+  width: 572px;
+  height: 538px;
+}
+
+
+.slider .slave {
+  width: 200px;
+}
+
+/* Использованы сложные селекторы т.к. карточки имеют общие стили, но внутри есть разные свойства */

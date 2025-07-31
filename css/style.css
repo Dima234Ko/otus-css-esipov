@@ -4,6 +4,7 @@ body {
     font-family: "Roboto", serif;
     font-weight: 700;
     font-size: 16px;
+    margin: 0;
 }
 
 h1 {
@@ -53,12 +54,6 @@ a {
     font-size: 16px;
 }
 
-nav ul li {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-size: 24px;
-}
-
 li {
     font-family: "Bitter", sans-serif;
     font-weight: 400;
@@ -69,7 +64,4 @@ blockquote {
     font-family: "Bitter", sans-serif;
     font-weight: 400;
     font-size: 26px;
-
-.hero {
-    background-image: url("../img/background.jpg");
 }

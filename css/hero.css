@@ -1,0 +1,8 @@
+.hero {
+    height: 630px;
+    background-image: url("../img/background.jpg");
+}
+
+.content-hero {
+    background-color: white;
+}
