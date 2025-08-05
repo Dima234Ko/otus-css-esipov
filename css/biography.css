@@ -1,7 +1,7 @@
 .biography {
     max-height: 840px;
     margin-top: 150px;
-    gap: 65px;
+    gap: 50px;
 }
 
 .biography-img {
@@ -12,8 +12,9 @@
 .biography-text {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
     max-height: 840px;
+    line-height: 1.2;
 }
 
 .biography-blockquote {

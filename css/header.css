@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     width: auto;
+    gap: 15px;
 }
 
 .nav ul {
@@ -34,10 +35,6 @@
 
 .nav-link:hover {
     text-decoration: underline;
-}
-
-.icon {
-    margin-left: 55px;
 }
 
 .icon img {
