@@ -1,41 +1,35 @@
 .designers {
-  height: 677px;
-  position: relative;
-  padding: 60px 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto 0; 
+  max-width: 1420px;
+  max-height: 677px;
+  overflow: hidden;
 }
-
 
 .slider {
   display: flex;
-  gap: 30px;
-  padding-left: 120px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  gap: 20px;
+  align-items: flex-end;
 }
 
-.slider article {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-end;
 }
 
-/* Использовано обращение напрямую к тегу, т.к. это общие св-ва для этого тега */
-
-.slider .main {
-  width: 619px;
+.main .description {
+  width: 332px;
 }
 
-.slider .main img {
-  width: 572px;
-  height: 538px;
+.description {
+  margin-top: 24px;
 }
 
-
-.slider .slave {
-  width: 200px;
+.designers-signature {
+  position: relative;
+  left: 150px;
+  top: -30px;
 }
-
-/* Использованы сложные селекторы т.к. карточки имеют общие стили, но внутри есть разные свойства */
