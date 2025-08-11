@@ -2,15 +2,15 @@
   display: flex;
   grid-row: span 2;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
 .resources {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 90px;
-  margin-left: 56px;
+  gap: 95px;
+  margin-left: 65px;
 }
 
 .vertical-text {
@@ -21,17 +21,15 @@
 .testimonials-signature {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  top: -233px;
-  left: 30px;
+  left: 25px;
   position: relative;
 }
 
 .testimonials {
   display: grid;
   max-width: 1165px;
-  margin: auto;
+  margin: 150px auto 0; 
   grid-template-columns: 569px 1fr 526px;
-  grid-template-rows: 1fr 1fr;
 }
 
 .testimonials-cta {
