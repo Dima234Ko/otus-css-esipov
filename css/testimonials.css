@@ -29,7 +29,7 @@
   display: grid;
   max-width: 1165px;
   margin: 150px auto 0; 
-  grid-template-columns: 569px 1fr 526px;
+  grid-template-columns: 50% 1fr 45%;
 }
 
 .testimonials-cta {
