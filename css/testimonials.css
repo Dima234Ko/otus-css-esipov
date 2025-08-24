@@ -1,39 +1,48 @@
-.testimonials {
-    height: 840px;
-    margin: 150px;
-    display: grid;
-    grid-template-columns: 569px 1fr;
-    gap: 30px;
-    align-items: start;
-    position: relative;
-}
-
-.testimonials .signature {
-    position: absolute;
-    transform: rotate(270deg);
-    transform-origin: center;
-    width: 130px; 
-}
-
-/* Использован сложный селектор, т.к. элементы с классом signature имеют общие параметры, но в разных блоках имеют разное расположение */
-
 .testimonials-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: flex;
+  grid-row: span 2;
+  align-items: center;
+  gap: 25px;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 95px;
+  margin-left: 65px;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.testimonials-signature {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  left: 25px;
+  position: relative;
+}
+
+.testimonials {
+  display: grid;
+  max-width: 1165px;
+  margin: 150px auto 0; 
+  grid-template-columns: 50% 1fr 45%;
 }
 
 .testimonials-cta {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 30px;
+  grid-column: 3;      
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 41px;
+  gap: 41px;
 }
 
-  .testimonials-cta img{
-    width: 221px;
-    height: 333px;
-  }
-
-  /* Использован сложный селектор, что бы обратиться к конкретной картинке */
+.testimonials-blockquote {
+  max-width: 216px;
+}
