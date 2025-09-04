@@ -36,10 +36,9 @@
   gap: 35px;
 }
 
-@media screen and (max-width: 1620px) {
+@media screen and (max-width: 1660px) {
   .slider {
     width: 100%;
-    margin-left: 40px;
     overflow-x: auto;
   }
 }

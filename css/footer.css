@@ -1,12 +1,24 @@
+.footer{
+    margin: 150px auto 0;
+    background-color: black;
+    color: white;
+}
+
 .footer-text {
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 190px;
 }
 
-.contact,
-.product,
-.rights {
-    flex: 1;
-    min-width: 0;
+.contact {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact a {
+    color: white;
 }

@@ -4,27 +4,29 @@
   flex-direction: column;
   align-items: center;
   margin: 150px auto 0;
+  max-width: 100%;
+  overflow-x: hidden; 
 }
 
 .strengths-content {
   display: flex;
   justify-content: center;
   max-height: 613px;
-  width: 100%;
-  overflow: hidden;
+  width: 100%; 
+  overflow-x: auto;
   gap: 20px;
 }
 
 .strengths-card {
   height: 555px;
   width: 335px;
+  flex-shrink: 0;
   overflow: hidden;
 }
 
-.strengths-signature {
-  position: absolute;
-  margin-right: 1050px;
-  margin-top: -50px;
+.strengths-card img {
+  width: 100%;
+  height: 100%;
 }
 
 .strengths-text {
@@ -32,8 +34,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 35px;
+  padding: 0 50px;
+}
+
+.strengths-text h2 {
+  line-height: 1;
 }
 
 .strengths-ul {
   text-align: left;
+}
+
+.strengths-ul li {
+  margin-bottom: 8px;
+}
+
+.strengths-signature {
+  position: absolute;
+  margin-right: 1050px;
+  margin-top: -50px;
 }
