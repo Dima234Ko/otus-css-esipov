@@ -1,25 +1,39 @@
 .strong-points {
-  height: 677px;
-  position: relative;
-  padding: 60px 0;
-}
-
-
-.strengths-grid {
-  display: flex;
-  gap: 30px;
-  padding-left: 120px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.strengths-card {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  margin: 150px auto 0;
+}
+
+.strengths-content {
+  display: flex;
+  justify-content: center;
+  max-height: 613px;
+  width: 100%;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.strengths-card {
   height: 555px;
   width: 335px;
+  overflow: hidden;
+}
+
+.strengths-signature {
+  position: absolute;
+  margin-right: 1050px;
+  margin-top: -50px;
+}
+
+.strengths-text {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strengths-ul {
+  text-align: left;
 }
