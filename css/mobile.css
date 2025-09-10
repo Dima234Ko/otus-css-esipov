@@ -7,6 +7,10 @@
         display: none;
     }
 
+    .nav {
+        gap: 7vw;
+    }
+
     .nav ul {
         display: block;
         width: 90%;
@@ -22,8 +26,19 @@
         width: 1ch;
         white-space: nowrap; 
         overflow: hidden; 
-        margin-right: 15vw;
+        margin-right: 14vw;
         font-size: 40px;
+    }
+
+    .hero {
+        align-items: start;
+        background-size: auto 110%;
+    }
+
+    .content-hero {
+        min-height: auto;
+        height: 303px;
+        width: 100%;
     }
 
 
