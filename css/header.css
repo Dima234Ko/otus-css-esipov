@@ -23,6 +23,12 @@
     padding: 0;
 }
 
+li {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
 /* Мы обращаемся к элементу ul внтури класса nav */
 
 .nav-link {

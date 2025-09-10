@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .header {
+        justify-content: center;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .nav ul {
+        display: block;
+        width: 90%;
+    }
+    
+    .nav-link {
+        font-family: "Bitter", serif;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+    
+    li {
+        width: 1ch;
+        white-space: nowrap; 
+        overflow: hidden; 
+        margin-right: 15vw;
+        font-size: 40px;
+    }
+
+
+}
