@@ -7,6 +7,7 @@
 .biography-img {
     max-width: 571px;
     max-height: 840px;
+    order: 1;
 }
 
 .biography-text {
@@ -15,7 +16,9 @@
     gap: 32px;
     max-height: 840px;
     line-height: 1.2;
+    order: 3;
 }
+
 
 .biography-blockquote {
     width: 370px;
@@ -27,6 +30,7 @@
     right: 20px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    order: 2;
 }
 
 .line {
@@ -36,3 +40,24 @@
     width: 20px;
     height: 6px;
 }
+
+.biography-text h2 {
+  order: 1;
+}
+
+.biography-text h6 {
+  order: 2;
+}
+
+.biography-text .line {
+  order: 3;
+}
+
+.biography-text blockquote {
+  order: 4;
+}
+
+.alt {
+    display: none;
+}
+  

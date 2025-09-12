@@ -1,4 +1,9 @@
 @media (max-width: 767px) {
+    
+    .contanier {
+        flex-direction: column;
+    }
+    
     .header {
         justify-content: center;
     }
@@ -22,7 +27,7 @@
         letter-spacing: 10px;
     }
     
-    li {
+    .nav ul li {
         width: 1ch;
         white-space: nowrap; 
         overflow: hidden; 
@@ -41,5 +46,92 @@
         width: 100%;
     }
 
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 0;
+        vertical-align: middle;
+    }
 
+    .biography {
+        margin-top: 180px;
+    }
+
+    .biography-img {
+        width: 100%;
+        max-width: none;
+        height: 400px;
+    }
+
+    .biography-text {
+        order: 1;
+    }
+
+    .biography-signature {
+        top: -588px;
+        right: -230px;
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .biography-img {
+        order: 3;
+    }
+
+    .biography-text h2 {
+        order: 3;
+    }
+    
+    .biography-text h6 {
+        order: 1;
+    }
+    
+    .biography-text .line {
+        display: none;
+    }
+    
+    .biography-text blockquote {
+        order: 2;
+    }
+
+    .main {
+        display: none;
+    }
+
+    .alt {
+        display: block;
+        font-style: normal;
+        padding: 0;
+        margin: 0;
+    }
+
+    .biography-text h6:not(.alt) {
+        display: none;
+    }
+
+    .alt ul {
+        padding-left: 0;
+        margin-top: 0.5em;
+        list-style: none;
+        display: flex;
+        flex-direction: column; 
+        gap: 0.3em;
+    }
+
+    .alt li {
+        display: block;
+        position: relative;
+        padding-left: 1.2em;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "Roboto", serif;
+    }
+    .alt li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+    }
+
+    
 }
