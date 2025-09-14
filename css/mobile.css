@@ -1,11 +1,21 @@
 @media (max-width: 767px) {
     
+    h2 {
+        font-size: 70px;
+    }
+
     .contanier {
         flex-direction: column;
     }
     
     .header {
         justify-content: center;
+    }
+
+    .header li {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
     }
 
     .logo-text {
@@ -127,6 +137,7 @@
         font-size: 16px;
         font-family: "Roboto", serif;
     }
+
     .alt li::before {
         content: "-";
         position: absolute;
@@ -155,6 +166,83 @@
         width: auto;
     }
 
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testimonials-cta {
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    .testimonials-cta img {
+        width: 336px;
+        height: 330px;
+    }
+
+    .testimonials-img {
+        order: 3;
+    }
+
+    .testimonials-img img {
+        display: none;
+    }
+
+    .testimonials-signature {
+        writing-mode: inherit;
+        transform: none;
+        margin-left: auto;
+        margin: 0 5% 0 auto;
+    }
+
+    .testimonials-blockquote {
+        max-width: 376px;
+    }
+
+    .resources {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .strengths-signature { 
+        position: inherit;
+        transform: none;
+        margin: 0 auto 10px 5%;
+    }
+
+    .strengths-content {
+        justify-content: flex-start;
+    }
+
+    .strengths-card {
+        height: 450px;
+        width: 310px;
+    }
+
+    .strengths-text {
+        width: 201px;
+        order: -1;
+        padding: 0;
+    }
+
+    .strengths-text h2 {
+        font-size: 46px;
+    }
+
+    .strengths-text li {
+        font-size: 24px;
+    }
+
+    
+    
+    
 
 
     
