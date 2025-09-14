@@ -239,11 +239,18 @@
     .strengths-text li {
         font-size: 24px;
     }
+    
+    .footer-text {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: start;
+    }
 
-    
-    
-    
-
+    .product{
+        margin-left: 75%;
+        order: -1;
+    }
 
     
 }
