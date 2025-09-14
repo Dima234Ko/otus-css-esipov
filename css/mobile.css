@@ -95,7 +95,7 @@
         order: 2;
     }
 
-    .main {
+    .biography-text .main {
         display: none;
     }
 
@@ -132,6 +132,30 @@
         position: absolute;
         left: 0;
     }
+
+    .designers-signature {
+        margin-right: 600px;
+    }
+
+    .cart {
+        width: 310px;
+        height: 520px;
+    }
+
+    .cart img {
+        width: 310px;
+        height: 430px;
+    }
+
+    .main {
+        align-items: flex-start;
+    }
+
+    .main .description {
+        width: auto;
+    }
+
+
 
     
 }
