@@ -1,0 +1,294 @@
+@media (max-width: 767px) {
+    
+    h2 {
+        font-size: 70px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .contanier {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    
+    .header {
+        justify-content: center;
+    }
+
+    .header li {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .nav {
+        gap: 7vw;
+    }
+
+    .nav ul {
+        display: block;
+        width: 90%;
+    }
+    
+    .nav-link {
+        font-family: "Bitter", serif;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+
+    .color {
+        color: #A07C72;
+    }
+    
+    .nav ul li {
+        width: 1ch;
+        white-space: nowrap; 
+        overflow: hidden; 
+        margin-right: 14vw;
+        font-size: 40px;
+    }
+
+    .hero {
+        align-items: start;
+        background-size: auto 110%;
+    }
+
+    .content-hero {
+        min-height: auto;
+        height: 270px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .content-hero h2 {
+        margin-top: 50px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .biography {
+        margin-top: 150px;
+        gap: 0px
+    }
+
+    .biography-img {
+        width: 100%;
+        max-width: none;
+        height: 400px;
+    }
+
+    .biography-text {
+        order: 1;
+    }
+
+    .biography-text h2 {
+        margin-top: 110px;
+    }
+
+    .biography-signature {
+        top: -520px;
+        margin: 0 1% 0 auto;
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .biography-img {
+        order: 3;
+    }
+
+    .biography-text h2 {
+        order: 3;
+    }
+    
+    .biography-text h6 {
+        order: 1;
+    }
+    
+    .biography-text .line {
+        display: none;
+    }
+
+    .biography-text .biography-blockquote main {
+        display: none;
+    }
+
+    .biography-text .biography-blockquote  {
+        display: flex;
+        width: 480px;
+    }
+
+    .biography-text blockquote {
+        order: 2;
+    }
+
+    .biography-text .main {
+        display: none;
+    }
+
+    .alt {
+        display: block;
+        font-style: normal;
+        padding: 0;
+        margin: 0;
+    }
+
+    .biography-text h6:not(.alt) {
+        display: none;
+    }
+
+    .alt ul {
+        padding-left: 0;
+        margin-top: 0.5em;
+        list-style: none;
+        display: flex;
+        flex-direction: column; 
+        gap: 0.3em;
+    }
+
+    .alt li {
+        display: block;
+        position: relative;
+        padding-left: 1.2em;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "Roboto", serif;
+    }
+
+    .alt li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+    }
+
+    .designers-signature {
+        margin: -45px 0 auto -87%;
+    }
+
+    .cart {
+        width: 310px;
+        height: 520px;
+    }
+
+    .cart img {
+        width: 310px;
+        height: 430px;
+    }
+
+    .main {
+        align-items: flex-start;
+    }
+
+    .main .description {
+        width: auto;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 70px;
+    }
+
+    .testimonials-cta {
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    .testimonials-cta img {
+        width: 336px;
+        height: 330px;
+    }
+
+    .testimonials-img {
+        order: 3;
+    }
+
+    .testimonials-img img {
+        display: none;
+    }
+
+    .testimonials-signature {
+        writing-mode: inherit;
+        transform: none;
+        margin-left: auto;
+        margin: 0 4% 0 auto;
+    }
+
+    .testimonials-blockquote {
+        max-width: 376px;
+    }
+
+    .resources {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .strong-points {
+        margin-top: 50px;
+    }
+
+    .strengths-signature { 
+        position: inherit;
+        transform: none;
+        margin: 0 auto 30px 1%;
+    }
+
+    .strengths-content {
+        justify-content: flex-start;
+    }
+
+    .strengths-card {
+        height: 450px;
+        width: 310px;
+    }
+
+    .strengths-text {
+        width: 201px;
+        order: -1;
+        padding: 0;
+    }
+
+    .strengths-text h2 {
+        font-size: 46px;
+    }
+
+    .strengths-text li {
+        font-size: 24px;
+    }
+
+    .footer {
+        margin: 70px auto 0;
+    }
+    
+    .footer-text {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .product{
+        margin-left: 75%;
+        order: -1;
+    }
+
+    
+}

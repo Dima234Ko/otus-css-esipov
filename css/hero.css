@@ -1,12 +1,13 @@
 .hero {
     display: flex;
-    background-image: url("../img/background.jpg");
+    background-image: url(../img/background.jpg);
+    background-size: auto 230%;
     width: 100%;
     aspect-ratio: 21 / 9;
     min-height: 630px;
     align-items: center;
     justify-content: center;
-    background-size: cover; 
+    background-position: bottom;
 }
 
 .content-hero {
