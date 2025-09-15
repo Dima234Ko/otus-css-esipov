@@ -4,8 +4,14 @@
         font-size: 70px;
     }
 
+    h4 {
+        font-size: 18px;
+    }
+
     .contanier {
         flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
     }
     
     .header {
@@ -36,6 +42,10 @@
         font-size: 40px;
         letter-spacing: 10px;
     }
+
+    .color {
+        color: #A07C72;
+    }
     
     .nav ul li {
         width: 1ch;
@@ -52,8 +62,13 @@
 
     .content-hero {
         min-height: auto;
-        height: 303px;
+        height: 270px;
         width: 100%;
+        justify-content: flex-start;
+    }
+
+    .content-hero h2 {
+        margin-top: 50px;
     }
 
     img {
@@ -65,7 +80,8 @@
     }
 
     .biography {
-        margin-top: 180px;
+        margin-top: 150px;
+        gap: 0px
     }
 
     .biography-img {
@@ -78,9 +94,13 @@
         order: 1;
     }
 
+    .biography-text h2 {
+        margin-top: 110px;
+    }
+
     .biography-signature {
-        top: -588px;
-        right: -230px;
+        top: -520px;
+        margin: 0 1% 0 auto;
         writing-mode: horizontal-tb;
         transform: none;
     }
@@ -100,7 +120,16 @@
     .biography-text .line {
         display: none;
     }
-    
+
+    .biography-text .biography-blockquote main {
+        display: none;
+    }
+
+    .biography-text .biography-blockquote  {
+        display: flex;
+        width: 480px;
+    }
+
     .biography-text blockquote {
         order: 2;
     }
@@ -145,7 +174,7 @@
     }
 
     .designers-signature {
-        margin-right: 600px;
+        margin: -45px 0 auto -87%;
     }
 
     .cart {
@@ -170,6 +199,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        margin-top: 70px;
     }
 
     .testimonials-cta {
@@ -194,7 +224,7 @@
         writing-mode: inherit;
         transform: none;
         margin-left: auto;
-        margin: 0 5% 0 auto;
+        margin: 0 1% 0 auto;
     }
 
     .testimonials-blockquote {
@@ -211,10 +241,14 @@
         transform: none;
     }
 
+    .strong-points {
+        margin-top: 50px;
+    }
+
     .strengths-signature { 
         position: inherit;
         transform: none;
-        margin: 0 auto 10px 5%;
+        margin: 0 auto 30px 1%;
     }
 
     .strengths-content {
@@ -238,6 +272,10 @@
 
     .strengths-text li {
         font-size: 24px;
+    }
+
+    .footer {
+        margin: 70px auto 0;
     }
     
     .footer-text {
