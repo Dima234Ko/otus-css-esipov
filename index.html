@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/testimonials.css">
     <link rel="stylesheet" href="./css/strong.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mod Studio</title>
@@ -25,7 +26,7 @@
                 <li><a href="#biography" class="nav-link">Biography</a></li>
                 <li><a href="#designers" class="nav-link">Designers</a></li>
                 <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#strengths" class="nav-link">Strong points</a></li>
+                <li><a href="#strengths" class="nav-link color">Strong points</a></li>
             </ul>
             <div class="icon">
                 <img src="./img/message.svg" alt="Message">
@@ -40,7 +41,7 @@
         </div>
     </section>
 
-    <section id="biography" class="biography contanier">   
+    <section id="biography" class="biography contanier"> 
         <div class="biography-img">
             <img src="./img/biography.jpg" alt="Katya Mills">    
         </div>
@@ -48,13 +49,29 @@
             <h4>Biography</h4>
         </div> 
         <div class="biography-text">
-            <h2>Katya <br> Mills</h2>
-            <h6>Art Director / <br> Scenography / Styling / Creative Photography / Design </h6>
+            <h2>Katya Mills</h2>
+            <h6 class="main">Art Director / <br> Scenography / Styling / Creative Photography / Design </h6>
+            <h6 class="alt">
+                Art Director
+                <ul>
+                  <li>Scenography</li>
+                  <li>Styling</li>
+                  <li>Creative Photography</li>
+                  <li>Design</li>
+                </ul>
+            </h6>
             <div class="line"></div>
-            <blockquote class="biography-blockquote">“The more I deal with the work 
+            <blockquote class="biography-blockquote main">“The more I deal with the work 
                 as something that is my own, 
                 as something that is personal, 
-                the more successful it is.”</blockquote>
+                the more successful it is.”
+            </blockquote>
+            <blockquote class="biography-blockquote alt">“The more I deal with <br/> 
+                the work as something that is my own, 
+                as something that <br/> is personal, 
+                the more successful it is.”
+            </blockquote>
+            
         </div>
     </section>
 
