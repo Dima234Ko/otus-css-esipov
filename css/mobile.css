@@ -289,6 +289,46 @@
         margin-left: 75%;
         order: -1;
     }
+}
 
-    
+@media (max-width: 550px) {
+    .contanier {
+        margin-left: 0px;
+    } 
+
+    .nav {
+        gap: 0px;
+    }
+
+    .nav ul li {
+        margin-right: 10vw;
+    }
+
+    .biography-text {
+        margin-left: 20px;
+    }
+
+    .biography-text .biography-blockquote {
+        width: 85%;
+    }
+
+    .biography-signature {
+        top: -475px;
+    }
+
+    .biography-text h2 {
+        margin-top: 8px;
+    }
+
+    .biography-img {
+        margin-top: 20px
+    }
+
+    .designers {
+        margin: 120px 20px 0;
+    }
+
+    .designers-signature {
+        margin: -45px 0 auto -80%;
+    }    
 }
