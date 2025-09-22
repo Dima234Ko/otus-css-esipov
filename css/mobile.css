@@ -11,7 +11,6 @@
     .contanier {
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 20px;
     }
     
     .header {
@@ -92,6 +91,7 @@
 
     .biography-text {
         order: 1;
+        margin-left: 20px;
     }
 
     .biography-text h2 {
@@ -172,6 +172,10 @@
         position: absolute;
         left: 0;
     }
+    
+    .designers {
+        margin-left: 20px;
+    }
 
     .designers-signature {
         margin: -45px 0 auto -87%;
@@ -191,6 +195,10 @@
         align-items: flex-start;
     }
 
+    .description {
+        line-height: 1.2;
+    }
+
     .main .description {
         width: auto;
     }
@@ -200,6 +208,8 @@
         flex-direction: column;
         gap: 30px;
         margin-top: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .testimonials-cta {
@@ -243,6 +253,7 @@
 
     .strong-points {
         margin-top: 50px;
+        margin-left: 20px;
     }
 
     .strengths-signature { 
@@ -292,6 +303,10 @@
 }
 
 @media (max-width: 550px) {
+    h3 {
+        line-height: 1.1;
+    }
+
     .contanier {
         margin-left: 0px;
     } 
@@ -304,24 +319,40 @@
         margin-right: 10vw;
     }
 
+    .hero {
+        max-height: 657px;
+        height: 657px;
+    }
+
     .content-hero {
         min-width: 0px;
     }
 
+    .biography {
+        margin-top: 130px;
+    }
+
     .biography-text {
+        gap: 65px;
         margin-left: 20px;
+    }
+
+    .biography-text .alt{
+        line-height: 0.9;
     }
 
     .biography-text .biography-blockquote {
         width: 85%;
+        line-height: 1.4;
     }
 
     .biography-signature {
-        top: -475px;
+        top: -499px;
     }
 
     .biography-text h2 {
-        margin-top: 8px;
+        margin-top: 0px;
+        line-height: 0.7;
     }
 
     .biography-img {
@@ -329,16 +360,22 @@
     }
 
     .designers {
-        margin: 120px 0px 0px;
+        margin: 150px 0px 0px;
         padding-left: 20px;
     }
 
     .designers-signature {
         margin: -45px 0 auto -80%;
     }
+
+    .testimonials {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     
     .testimonials-cta {
         flex-direction: column;
+        gap: 22px;
     }
 
     .testimonials-signature {
@@ -352,6 +389,15 @@
     .resources {
         flex-wrap: wrap;
         margin-left: 20px;
+        gap: 30px;
+    }
+    
+    .strengths-ul {
+        line-height: 1.2;
+    }
+
+    .strengths-text {
+        gap: 20px;
     }
 
     .strong-points {
@@ -360,5 +406,9 @@
 
     .product {
         margin-left: 62%;
+    }
+
+    .footer-text {
+        gap: 20px;
     }
 }
