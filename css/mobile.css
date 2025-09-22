@@ -304,6 +304,10 @@
         margin-right: 10vw;
     }
 
+    .content-hero {
+        min-width: 0px;
+    }
+
     .biography-text {
         margin-left: 20px;
     }
@@ -325,10 +329,36 @@
     }
 
     .designers {
-        margin: 120px 20px 0;
+        margin: 120px 0px 0px;
+        padding-left: 20px;
     }
 
     .designers-signature {
         margin: -45px 0 auto -80%;
-    }    
+    }
+    
+    .testimonials-cta {
+        flex-direction: column;
+    }
+
+    .testimonials-signature {
+        margin: 0 11% 0 auto;
+    }
+
+    .testimonials-cta img {
+        width: 91%;
+    }
+
+    .resources {
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .strong-points {
+        margin-left: 20px;
+    }
+
+    .product {
+        margin-left: 62%;
+    }
 }
