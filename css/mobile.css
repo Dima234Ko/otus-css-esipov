@@ -184,11 +184,8 @@
         align-items: flex-start;
     }
 
-    .description {
+    .designers__card-description {
         line-height: 1.2;
-    }
-
-    .designers__card--main .description {
         width: auto;
     }
 
