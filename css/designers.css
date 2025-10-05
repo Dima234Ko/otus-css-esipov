@@ -8,13 +8,13 @@
   width: 100%;
 }
 
-.designers-signature {
+.designers__signature {
   position: absolute;
   margin-right: 1050px;
   margin-top: -50px;
 }
 
-.slider {
+.designers__slider {
   display: flex;
   gap: 20px;
   overflow-x: hidden;
@@ -30,14 +30,14 @@
   width: 337px;
 }
 
-.cart {
+.designers__card {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
 @media screen and (max-width: 1660px) {
-  .slider {
+  .designers__slider {
     width: 100%;
     overflow-x: auto;
   }

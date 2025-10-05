@@ -54,7 +54,7 @@
   order: 1;
 }
 
-.biography__text h6 {
+.biography__text--main {
   order: 2;
 }
 
@@ -62,7 +62,7 @@
   order: 3;
 }
 
-.biography__text blockquote {
+.biography__blockquote{
   order: 4;
 }
 

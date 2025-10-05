@@ -12,7 +12,7 @@
         justify-content: center;
     }
 
-    .navigation__button {
+    .navigation__item {
         position: relative;
         overflow: hidden;
         display: inline-block;
@@ -41,7 +41,7 @@
         color: #A07C72;
     }
     
-    .navigation__button {
+    .navigation__item {
         width: 1ch;
         white-space: nowrap; 
         overflow: hidden; 
@@ -84,35 +84,42 @@
         width: 100%;
         max-width: none;
         height: 400px;
-        order: 3;
+        order: 2;
     }
 
     .biography__text {
         order: 1;
+    }
+
+    .biography__text--alt {
+        order: 1;
         margin-left: 20px;
+        display: block;
+        font-style: normal;
+        padding: 0;
+        margin: 0;
     }
 
     .biography__text h2 {
         margin-top: 110px;
+        order: 3;
     }
 
     .biography__signature {
-        top: -520px;
+        top: -915px;
         margin: 0 1% 0 auto;
         writing-mode: horizontal-tb;
         transform: none;
     }
-
-    .biography__text h2 {
-        order: 3;
-    }
-    
-    .biography__text h6 {
-        order: 1;
-    }
     
     .biography__text .line {
         display: none;
+    }
+
+    .biography__blockquote {
+        display: flex;
+        width: 480px;
+        order: 2;
     }
     
     .biography__blockquote--main {
@@ -123,28 +130,15 @@
         display: flex;
     }
 
-    .biography-blockquote  {
-        display: flex;
-        width: 480px;
-        order: 2;
+    .biography__text--main {
+        display: none;
     }
 
     .biography__text--main {
         display: none;
     }
 
-    .biography__text--alt {
-        display: block;
-        font-style: normal;
-        padding: 0;
-        margin: 0;
-    }
-
-    .biography__text--main {
-        display: none;
-    }
-
-    .alt ul {
+    .biography__list {
         padding-left: 0;
         margin-top: 0.5em;
         list-style: none;
@@ -153,7 +147,7 @@
         gap: 0.3em;
     }
 
-    .alt li {
+    .biography__item {
         display: block;
         position: relative;
         padding-left: 1.2em;
@@ -172,21 +166,21 @@
         margin-left: 20px;
     }
 
-    .designers-signature {
+    .designers__signature {
         margin: -45px 0 auto -87%;
     }
 
-    .cart {
+    .designers__card {
         width: 310px;
         height: 520px;
     }
 
-    .cart img {
+    .designers__card img {
         width: 310px;
         height: 430px;
     }
 
-    .main {
+    .designers__card--main {
         align-items: flex-start;
     }
 
@@ -194,7 +188,7 @@
         line-height: 1.2;
     }
 
-    .main .description {
+    .designers__card--main .description {
         width: auto;
     }
 
@@ -304,7 +298,7 @@
         gap: 0px;
     }
 
-    .navigation__button {
+    .navigation__item {
         margin-right: 10vw;
     }
 
@@ -336,10 +330,6 @@
         line-height: 1.4;
     }
 
-    .biography__signature {
-        top: -499px;
-    }
-
     .biography__text h2 {
         margin-top: 0px;
         line-height: 0.7;
@@ -354,7 +344,7 @@
         padding-left: 20px;
     }
 
-    .designers-signature {
+    .designers__signature {
         margin: -45px 0 auto -80%;
     }
 
