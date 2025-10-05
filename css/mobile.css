@@ -23,30 +23,30 @@
         display: inline-block;
     }
 
-    .logo-text {
+    .logo {
         display: none;
     }
 
-    .nav {
+    .navigation {
         gap: 7vw;
     }
 
-    .nav ul {
+    .navigation ul {
         display: block;
         width: 90%;
     }
     
-    .nav-link {
+    .navigation__button {
         font-family: "Bitter", serif;
         font-size: 40px;
         letter-spacing: 10px;
     }
 
-    .color {
+    .navigation__button--color {
         color: #A07C72;
     }
     
-    .nav ul li {
+    .navigation__button {
         width: 1ch;
         white-space: nowrap; 
         overflow: hidden; 
@@ -311,11 +311,11 @@
         margin-left: 0px;
     } 
 
-    .nav {
+    .navigation {
         gap: 0px;
     }
 
-    .nav ul li {
+    .navigation ul li {
         margin-right: 10vw;
     }
 
