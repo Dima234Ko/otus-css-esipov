@@ -8,14 +8,14 @@
     box-sizing: border-box;
 }
 
-.nav {
+.navigation {
     display: flex;
     align-items: center;
     width: auto;
     gap: 15px;
 }
 
-.nav ul {
+.navigation__list {
     display: flex;
     list-style: none;
     gap: 55px;
@@ -23,7 +23,7 @@
     padding: 0;
 }
 
-.nav-link {
+.navigation__link {
     font-family: "Roboto", serif;
     font-weight: 500;
     font-size: 24px;
@@ -31,7 +31,7 @@
     text-decoration: none;
 }
 
-.nav-link:hover {
+.navigation__link:hover {
     text-decoration: underline;
 }
 

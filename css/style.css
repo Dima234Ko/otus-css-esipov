@@ -84,11 +84,3 @@ blockquote {
     display: inline;
     margin: 0;
 }
-
-.contanier {
-    max-width: 1165px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
