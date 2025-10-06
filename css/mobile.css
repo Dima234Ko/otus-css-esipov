@@ -89,6 +89,7 @@
 
     .biography__text {
         order: 1;
+        margin-left: 20px;
     }
 
     .biography__text--alt {
@@ -101,12 +102,13 @@
     }
 
     .biography__text h2 {
-        margin-top: 110px;
+        font-size: 64px;
+        margin-top: 90px;
         order: 3;
     }
 
     .biography__signature {
-        top: -915px;
+        top: -910px;
         margin: 0 1% 0 auto;
         writing-mode: horizontal-tb;
         transform: none;
@@ -118,7 +120,7 @@
 
     .biography__blockquote {
         display: flex;
-        width: 480px;
+        width: 540px;
         order: 2;
     }
     
@@ -128,6 +130,9 @@
 
     .biography__blockquote--alt {
         display: flex;
+        margin-top: 30px;
+        font-size: 30px;
+        line-height: 35px;
     }
 
     .biography__text--main {
@@ -144,7 +149,7 @@
         list-style: none;
         display: flex;
         flex-direction: column; 
-        gap: 0.3em;
+        line-height: 18px;
     }
 
     .biography__item {
@@ -164,6 +169,7 @@
     
     .designers {
         margin-left: 20px;
+        width: calc(100% - 20px);
     }
 
     .designers__signature {
@@ -267,6 +273,14 @@
         font-size: 46px;
     }
 
+    .strengths__item {
+        font-size: 24px;
+    }
+
+    .strengths__content-list {
+        line-height: 28px;
+    }
+
     .footer {
         margin: 70px auto 0;
     }
@@ -311,9 +325,12 @@
         margin-top: 130px;
     }
 
+    .biography__signature {
+        top: -976px;
+    }
+
     .biography__text {
         gap: 65px;
-        margin-left: 20px;
     }
 
     .biography__text--alt{
