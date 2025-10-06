@@ -1,11 +1,11 @@
-.testimonials-img {
+.testimonials__image-with-captions {
   display: flex;
   grid-row: span 2;
   align-items: center;
   gap: 25px;
 }
 
-.resources {
+.testimonials__caption {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,12 +13,12 @@
   margin-left: 65px;
 }
 
-.vertical-text {
+.testimonials__caption--vertical-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
 
-.testimonials-signature {
+.testimonials__signature {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   left: 25px;
@@ -32,7 +32,7 @@
   grid-template-columns: 50% 1fr 45%;
 }
 
-.testimonials-cta {
+.testimonials__cta {
   grid-column: 3;      
   grid-row: 1 / 3;
   display: flex;
@@ -43,6 +43,6 @@
   gap: 41px;
 }
 
-.testimonials-blockquote {
+.testimonials__cta-blockquote {
   max-width: 216px;
 }

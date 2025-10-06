@@ -198,74 +198,72 @@
         margin-right: 20px;
     }
 
-    .testimonials-cta {
+    .testimonials__cta {
         flex-direction: row;
         margin: 0px;
     }
 
-    .testimonials-cta img {
+    .testimonials__cta-image {
         width: 336px;
         height: 330px;
     }
 
-    .testimonials-img {
+    .testimonials__image-with-captions {
         order: 3;
     }
 
-    .testimonials-img img {
+    .testimonials__image {
         display: none;
     }
 
-    .testimonials-signature {
+    .testimonials__signature {
         writing-mode: inherit;
         transform: none;
         margin-left: auto;
         margin: 0 4% 0 auto;
     }
 
-    .testimonials-blockquote {
+    .testimonials__cta-blockquote {
         max-width: 376px;
     }
 
-    .resources {
+    .testimonials__caption {
         flex-direction: row;
         gap: 60px;
     }
 
-    
-
-    .vertical-text {
+    .testimonials__caption--vertical-text {
         writing-mode: horizontal-tb;
         transform: none;
     }
 
-    .strong-points {
+    .strengths {
         margin-top: 50px;
         margin-left: 20px;
     }
 
-    .strengths-signature { 
+    .strengths__signature { 
         position: inherit;
         transform: none;
         margin: 0 auto 30px 1%;
     }
 
-    .strengths-content {
+    .strengths__content {
         justify-content: flex-start;
     }
 
-    .strengths-card {
+    .strengths__content-card {
         height: 450px;
         width: 310px;
     }
 
-    .strengths-text {
+    .strengths__content-card-text {
         width: 201px;
         order: -1;
         padding: 0;
     }
 
-    .strengths-text h2 {
+    .strengths__content-card-text h2 {
         font-size: 46px;
     }
 
@@ -273,14 +271,14 @@
         margin: 70px auto 0;
     }
     
-    .footer-text {
+    .footer__text {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
         align-items: start;
     }
 
-    .product{
+    .footer__product{
         margin-left: 75%;
         order: -1;
     }
@@ -350,42 +348,42 @@
         margin-right: 0px;
     }
     
-    .testimonials-cta {
+    .testimonials__cta {
         flex-direction: column;
         gap: 22px;
     }
 
-    .testimonials-signature {
+    .testimonials__signature {
         margin: 0 11% 0 auto;
     }
 
-    .testimonials-cta img {
+    .testimonials__cta-image {
         width: 91%;
     }
 
-    .resources {
+    .testimonials__caption {
         flex-wrap: wrap;
         margin-left: 20px;
         gap: 30px;
     }
     
-    .strengths-ul {
+    .strengths__content-list {
         line-height: 1.2;
     }
 
-    .strengths-text {
+    .strengths__content-card-text {
         gap: 20px;
     }
 
-    .strong-points {
+    .strengths {
         margin-left: 20px;
     }
 
-    .product {
+    .footer__product {
         margin-left: 62%;
     }
 
-    .footer-text {
+    .footer__text {
         gap: 20px;
     }
 }
