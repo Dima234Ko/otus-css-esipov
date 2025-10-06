@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display:wght@400..900&family=Roboto:wght@100..900&display=swap");
-/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +79,86 @@ button {
   font-weight: 400;
   font-style: normal;
 }
+body {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 600;
+  font-size: 86px;
+}
+
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.18;
+}
+
+h4 {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h6 {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.3;
+}
+
+span {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 1.3;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+}
+
+blockquote {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
 .header {
   width: 100%;
   height: 135px;
@@ -171,6 +250,7 @@ button {
   order: 3;
 }
 
+.biography__text--alt,
 .biography__blockquote--alt {
   display: none;
 }
@@ -217,7 +297,7 @@ button {
 }
 
 .designers {
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,7 +349,7 @@ button {
   display: flex;
   grid-row: span 2;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .testimonials__caption {
@@ -315,7 +395,7 @@ button {
 }
 
 .strengths {
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,7 +503,7 @@ button {
     width: 90%;
   }
   .navigation__link {
-    font-family: "Bitter", serif;
+    font-family: "Bitter", sans-serif;
     font-size: 40px;
     letter-spacing: 10px;
   }
@@ -460,7 +540,7 @@ button {
   }
   .biography {
     margin-top: 150px;
-    gap: 0px;
+    gap: 0;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -509,9 +589,6 @@ button {
     margin-top: 30px;
     font-size: 30px;
     line-height: 35px;
-  }
-  .biography__text--main {
-    display: none;
   }
   .biography__text--main {
     display: none;
@@ -569,7 +646,7 @@ button {
   }
   .testimonials__cta {
     flex-direction: row;
-    margin: 0px;
+    margin: 0;
   }
   .testimonials__cta-image {
     width: 336px;
@@ -584,7 +661,6 @@ button {
   .testimonials__signature {
     writing-mode: inherit;
     transform: none;
-    margin-left: auto;
     margin: 0 4% 0 auto;
   }
   .testimonials__cta-blockquote {
@@ -647,7 +723,7 @@ button {
     line-height: 1.1;
   }
   .navigation {
-    gap: 0px;
+    gap: 0;
   }
   .navigation__item {
     margin-right: 10vw;
@@ -657,10 +733,10 @@ button {
     height: 657px;
   }
   .hero__content {
-    min-width: 0px;
+    min-width: 0;
   }
   .biography {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 130px;
   }
   .biography__signature {
@@ -677,22 +753,22 @@ button {
     line-height: 1.4;
   }
   .biography__text h2 {
-    margin-top: 0px;
+    margin-top: 0;
     line-height: 0.7;
   }
   .biography__img {
     margin-top: 20px;
   }
   .designers {
-    margin: 150px 0px 0px;
+    margin: 150px 0 0;
     padding-left: 20px;
   }
   .designers__signature {
     margin: -45px 0 auto -80%;
   }
   .testimonials {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .testimonials__cta {
     flex-direction: column;
@@ -713,7 +789,7 @@ button {
     line-height: 1.2;
   }
   .strengths__content-card-text {
-    gap: 20px;
+    gap: 22px;
   }
   .strengths {
     margin-left: 20px;
@@ -724,83 +800,4 @@ button {
   .footer__text {
     gap: 20px;
   }
-}
-body {
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0;
-  justify-content: center;
-}
-
-h1 {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 600;
-  font-size: 86px;
-}
-
-h2 {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 500;
-  font-size: 86px;
-  line-height: 1.3;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.18;
-}
-
-h4 {
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-h5 {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-h6 {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-p {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1.3;
-}
-
-span {
-  font-family: "Roboto", serif;
-  font-weight: 900;
-  font-size: 16px;
-  letter-spacing: 1.3;
-  text-transform: uppercase;
-}
-
-a {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-li {
-  font-family: "Bitter", sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-}
-
-blockquote {
-  font-family: "Bitter", sans-serif;
-  font-weight: 400;
-  font-size: 26px;
 }/*# sourceMappingURL=style.css.map */

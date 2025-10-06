@@ -1,302 +1,4 @@
-@media (max-width: 767px) {
-    
-    h2 {
-        font-size: 70px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-    
-    .header {
-        justify-content: center;
-    }
-
-    .navigation__item {
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .navigation {
-        gap: 7vw;
-    }
-
-    .navigation__list {
-        display: block;
-        width: 90%;
-    }
-    
-    .navigation__link {
-        font-family: "Bitter", serif;
-        font-size: 40px;
-        letter-spacing: 10px;
-    }
-
-    .navigation__link--color {
-        color: #A07C72;
-    }
-    
-    .navigation__item {
-        width: 1ch;
-        white-space: nowrap; 
-        overflow: hidden; 
-        margin-right: 14vw;
-        font-size: 40px;
-    }
-
-    .hero {
-        align-items: start;
-        background-size: auto 110%;
-    }
-
-    .hero__content {
-        min-height: auto;
-        height: 270px;
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .hero__content h2 {
-        margin-top: 50px;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 0;
-        vertical-align: middle;
-    }
-
-    .biography {
-        margin-top: 150px;
-        gap: 0px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .biography__img {
-        width: 100%;
-        max-width: none;
-        height: 400px;
-        order: 2;
-    }
-
-    .biography__text {
-        order: 1;
-        margin-left: 20px;
-    }
-
-    .biography__text--alt {
-        order: 1;
-        margin-left: 20px;
-        display: block;
-        font-style: normal;
-        padding: 0;
-        margin: 0;
-    }
-
-    .biography__text h2 {
-        font-size: 64px;
-        margin-top: 90px;
-        order: 3;
-    }
-
-    .biography__signature {
-        top: -910px;
-        margin: 0 1% 0 auto;
-        writing-mode: horizontal-tb;
-        transform: none;
-    }
-    
-    .biography__text .line {
-        display: none;
-    }
-
-    .biography__blockquote {
-        display: flex;
-        width: 540px;
-        order: 2;
-    }
-    
-    .biography__blockquote--main {
-        display: none;
-    }
-
-    .biography__blockquote--alt {
-        display: flex;
-        margin-top: 30px;
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .biography__text--main {
-        display: none;
-    }
-
-    .biography__text--main {
-        display: none;
-    }
-
-    .biography__list {
-        padding-left: 0;
-        margin-top: 0.5em;
-        list-style: none;
-        display: flex;
-        flex-direction: column; 
-        line-height: 18px;
-    }
-
-    .biography__item {
-        display: block;
-        position: relative;
-        padding-left: 1.2em;
-        font-weight: 400;
-        font-size: 16px;
-        font-family: "Roboto", serif;
-    }
-
-    .alt li::before {
-        content: "-";
-        position: absolute;
-        left: 0;
-    }
-    
-    .designers {
-        margin-left: 20px;
-        width: calc(100% - 20px);
-    }
-
-    .designers__signature {
-        margin: -45px 0 auto -87%;
-    }
-
-    .designers__card {
-        width: 310px;
-        height: 520px;
-    }
-
-    .designers__card img {
-        width: 310px;
-        height: 430px;
-    }
-
-    .designers__card--main {
-        align-items: flex-start;
-    }
-
-    .designers__card-description {
-        line-height: 1.2;
-        width: auto;
-    }
-
-    .testimonials {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 70px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .testimonials__cta {
-        flex-direction: row;
-        margin: 0px;
-    }
-
-    .testimonials__cta-image {
-        width: 336px;
-        height: 330px;
-    }
-
-    .testimonials__image-with-captions {
-        order: 3;
-    }
-
-    .testimonials__image {
-        display: none;
-    }
-
-    .testimonials__signature {
-        writing-mode: inherit;
-        transform: none;
-        margin-left: auto;
-        margin: 0 4% 0 auto;
-    }
-
-    .testimonials__cta-blockquote {
-        max-width: 376px;
-    }
-
-    .testimonials__caption {
-        flex-direction: row;
-        gap: 60px;
-    }
-
-    .testimonials__caption--vertical-text {
-        writing-mode: horizontal-tb;
-        transform: none;
-    }
-
-    .strengths {
-        margin-top: 50px;
-        margin-left: 20px;
-    }
-
-    .strengths__signature { 
-        position: inherit;
-        transform: none;
-        margin: 0 auto 30px 1%;
-    }
-
-    .strengths__content {
-        justify-content: flex-start;
-    }
-
-    .strengths__content-card {
-        height: 450px;
-        width: 310px;
-    }
-
-    .strengths__content-card-text {
-        width: 201px;
-        order: -1;
-        padding: 0;
-    }
-
-    .strengths__content-card-text h2 {
-        font-size: 46px;
-    }
-
-    .strengths__item {
-        font-size: 24px;
-    }
-
-    .strengths__content-list {
-        line-height: 28px;
-    }
-
-    .footer {
-        margin: 70px auto 0;
-    }
-    
-    .footer__text {
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .footer__product{
-        margin-left: 75%;
-        order: -1;
-    }
-}
+@import 'vars';
 
 @media (max-width: 550px) {
     h3 {
@@ -304,7 +6,7 @@
     }
 
     .navigation {
-        gap: 0px;
+        gap: 0;
     }
 
     .navigation__item {
@@ -317,11 +19,11 @@
     }
 
     .hero__content {
-        min-width: 0px;
+        min-width: 0;
     }
 
     .biography {
-        margin-left: 0px;
+        margin-left: 0;
         margin-top: 130px;
     }
 
@@ -330,7 +32,7 @@
     }
 
     .biography__text {
-        gap: 65px;
+        gap: $spacing-gap-biography-text;
     }
 
     .biography__text--alt{
@@ -343,17 +45,17 @@
     }
 
     .biography__text h2 {
-        margin-top: 0px;
+        margin-top: 0;
         line-height: 0.7;
     }
 
     .biography__img {
-        margin-top: 20px
+        margin-top: 20px;
     }
 
     .designers {
-        margin: 150px 0px 0px;
-        padding-left: 20px;
+        margin: 150px 0 0;
+        padding-left: $spacing-sm;
     }
 
     .designers__signature {
@@ -361,13 +63,13 @@
     }
 
     .testimonials {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .testimonials__cta {
         flex-direction: column;
-        gap: 22px;
+        gap: $spacing-gap-testimonials-cta;
     }
 
     .testimonials__signature {
@@ -380,7 +82,7 @@
 
     .testimonials__caption {
         flex-wrap: wrap;
-        margin-left: 20px;
+        margin-left: $spacing-sm;
         gap: 30px;
     }
     
@@ -389,11 +91,11 @@
     }
 
     .strengths__content-card-text {
-        gap: 20px;
+        gap: $spacing-gap-testimonials-cta;
     }
 
     .strengths {
-        margin-left: 20px;
+        margin-left: $spacing-sm;
     }
 
     .footer__product {
@@ -401,6 +103,6 @@
     }
 
     .footer__text {
-        gap: 20px;
+        gap: $spacing-gap-footer-small;
     }
 }

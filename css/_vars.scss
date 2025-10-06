@@ -1,9 +1,21 @@
-// === Fonts ===
+// === Colors ===
+$color-black: black;
+$color-white: white;
+
+// === Spacing ===
+$spacing-xs: 10px;
+$spacing-sm: 20px;
+$spacing-md: 35px;
+$spacing-lg: 50px;
+$spacing-xl: 95px;
+$spacing-xxl: 150px;
+
+// === Typography ===
 $font-roboto: 'Roboto', serif;
 $font-playfair: 'Playfair Display', sans-serif;
 $font-bitter: 'Bitter', sans-serif;
 
-// === Font Sizes ===
+// Font Sizes
 $font-size-86: 86px;
 $font-size-34: 34px;
 $font-size-32: 32px;
@@ -13,7 +25,7 @@ $font-size-20: 20px;
 $font-size-18: 18px;
 $font-size-16: 16px;
 
-// === Font Weights ===
+// Font Weights
 $font-weight-900: 900;
 $font-weight-700: 700;
 $font-weight-600: 600;
@@ -21,87 +33,90 @@ $font-weight-500: 500;
 $font-weight-400: 400;
 $font-weight-100: 100;
 
-// === Line Heights ===
+// Line Heights
 $line-height-1-3: 1.3;
 $line-height-1-2: 1.2;
 $line-height-1-18: 1.18;
 
-// === Letter Spacing ===
+// Letter Spacing
 $letter-spacing-1-3: 1.3;
 
-// === Colors ===
-$text-color-black: black;
-$color-line: black;
-
-// === Layout / Sizes ===
-$max-width-biography: 1165px;
-$max-height-biography: 840px;
+// === Layout ===
 $line-width: 20px;
 $line-height: 6px;
 $line-top-offset: 11px;
-
+$max-width-biography: 1165px;
+$max-height-biography: 840px;
+$biography-img-width: 571px;
+$biography-blockquote-width: 370px;
 $signature-top-offset: -360px;
 $signature-right-offset: 20px;
 
-// === Header Section ===
+// === Header
 $header-height: 135px;
-$header-padding-x: 20px;
-
 $nav-gap: 15px;
 $nav-list-gap: 55px;
 
-$font-size-nav-link: $font-size-24;
-$icon-size: 50px;
-
-// === Hero Section ===
+// === Hero Section
 $hero-bg-image: url(../img/background.jpg);
 $hero-bg-size: auto 230%;
 $hero-aspect-ratio: 21 / 9;
 $hero-min-height: 630px;
-
 $hero-content-min-height: 360px;
 $hero-content-min-width: 690px;
 $hero-content-gap: 18px;
 
-$color-white: white;
-
-// === Biography Section ===
-
-$biography-gap: 50px;
-$biography-margin-top: 150px;
-
-$biography-img-width: 571px;
-$biography-blockquote-width: 370px;
-
-// === Designers Section ===
-$padding-top-section: 40px;
-$margin-top-large: 150px;
+// === Designers
 $max-height-designers: 677px;
 $margin-right-signature: 1050px;
 $margin-top-signature: -50px;
-
-$slider-gap: 20px;
-$card-gap: 35px;
-
 $card-description-width: 337px;
 
-// === Testimonials Section ===
+// === Testimonials
 $testimonials-grid-template: 50% 1fr 45%;
-$testimonials-caption-gap: 95px;
 $testimonials-caption-margin-left: 65px;
-$testimonials-gap: 25px;
+$testimonials-gap: $spacing-sm;
 $testimonials-signature-left: 25px;
-
 $testimonials-cta-gap: 41px;
 $testimonials-cta-margin-top: 41px;
 $testimonials-cta-blockquote-max-width: 216px;
 
+// === Strengths
+$strengths-max-height: 613px;
+$strengths-card-height: 555px;
+$strengths-card-width: 335px;
 
+$strengths-card-text-width: 450px;
+$strengths-item-margin-bottom: 8px;
 
+// === Footer
+$footer-height: 190px;
 
-
-
-
-
-// === Media Query Breakpoints ===
+// === Breakpoints
 $breakpoint-large: 1660px;
+
+// === Mobile ===
+$font-size-h2-mobile: 70px;
+$font-size-h4-mobile: 18px;
+$font-size-h2-biography-mobile: 64px;
+$font-size-blockquote-mobile: 30px;
+$font-size-item-mobile: 16px;
+$font-size-strengths-item: 24px;
+$font-size-strengths-title: 46px;
+$spacing-gap-hero-title: 50px;
+$spacing-margin-top-biography: 150px;
+$spacing-margin-top-testimonials: 70px;
+$spacing-margin-top-strengths: 50px;
+$spacing-gap-testimonials: 30px;
+$spacing-gap-footer: 10px;
+$width-strengths-card-mobile: 310px;
+$height-strengths-card-mobile: 450px;
+$width-designers-img-mobile: 310px;
+$height-designers-img-mobile: 430px;
+$spacing-margin-blockquote-mobile: 90px;
+$spacing-gap-biography-text: 65px;
+$spacing-gap-testimonials-cta: 22px;
+$spacing-gap-footer-small: 20px;
+$spacing-testimonials-caption-gap: 60px;
+$max-width-testimonials-quote-mobile: 376px;
+

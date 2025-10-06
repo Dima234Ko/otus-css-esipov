@@ -1,11 +1,11 @@
 @import 'vars';
 
 .designers {
-  padding-top: $padding-top-section;
+  padding-top: $spacing-sm;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: $margin-top-large auto 0;
+  margin: $spacing-xxl auto 0;
   max-height: $max-height-designers;
   width: 100%;
 }
@@ -18,7 +18,7 @@
 
 .designers__slider {
   display: flex;
-  gap: $slider-gap;
+  gap: $spacing-sm;
   overflow-x: hidden;
   overflow-y: hidden;
   align-items: flex-end;
@@ -35,7 +35,7 @@
 .designers__card {
   display: flex;
   flex-direction: column;
-  gap: $card-gap;
+  gap: $spacing-md;
 }
 
 .designers__card-text {

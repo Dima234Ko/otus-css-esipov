@@ -1,57 +1,59 @@
+@import 'vars';
+
 .strengths {
-  padding-top: 40px;
+  padding-top: $spacing-sm;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 150px auto 0;
+  margin: $spacing-xxl auto 0;
   max-width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .strengths__content {
   display: flex;
   justify-content: center;
-  max-height: 613px;
-  width: 100%; 
+  max-height: $strengths-max-height;
+  width: 100%;
   overflow-x: auto;
-  gap: 20px;
+  gap: $spacing-sm;
 }
 
 .strengths__content-card {
-  height: 555px;
-  width: 335px;
+  height: $strengths-card-height;
+  width: $strengths-card-width;
   flex-shrink: 0;
   overflow: hidden;
 }
 
-.strengths__content-card-image{
+.strengths__content-card-image {
   width: 100%;
   height: 100%;
 }
 
 .strengths__content-card-text {
-  width: 450px;
+  width: $strengths-card-text-width;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
-  padding: 0 50px;
+  gap: $spacing-md;
+  padding: 0 $spacing-lg;
 }
 
 .strengths__content-card-text h2 {
   line-height: 1;
 }
 
-.strengths__content-list{
+.strengths__content-list {
   text-align: left;
 }
 
 .strengths__item {
-  margin-bottom: 8px;
+  margin-bottom: $strengths-item-margin-bottom;
 }
 
 .strengths__signature {
   position: absolute;
-  margin-right: 1050px;
-  margin-top: -50px;
+  margin-right: $margin-right-signature;
+  margin-top: $margin-top-signature;
 }

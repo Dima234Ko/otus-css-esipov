@@ -7,8 +7,8 @@
   align-items: center;
   margin: auto;
   max-height: $max-height-biography;
-  margin-top: $biography-margin-top;
-  gap: $biography-gap;
+  margin-top: $spacing-xxl;
+  gap: $spacing-lg;
 }
 
 .biography__img {
@@ -26,6 +26,7 @@
   order: 3;
 }
 
+.biography__text--alt,
 .biography__blockquote--alt {
   display: none;
 }
@@ -46,7 +47,7 @@
 .line {
   position: relative;
   top: $line-top-offset;
-  background-color: $color-line;
+  background-color: $color-black;
   width: $line-width;
   height: $line-height;
 }
