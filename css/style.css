@@ -666,6 +666,9 @@ blockquote {
   .testimonials__cta-blockquote {
     max-width: 376px;
   }
+  .testimonials__cta-blockquote h3 {
+    font-size: 30px;
+  }
   .testimonials__caption {
     flex-direction: row;
     gap: 60px;

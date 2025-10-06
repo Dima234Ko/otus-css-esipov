@@ -229,6 +229,10 @@
         max-width: $max-width-testimonials-quote-mobile;
     }
 
+    .testimonials__cta-blockquote h3 {
+        font-size: $font-size-blockquote-mobile;
+    }
+
     .testimonials__caption {
         flex-direction: row;
         gap: $spacing-testimonials-caption-gap;
