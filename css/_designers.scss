@@ -1,22 +1,24 @@
+@import 'vars';
+
 .designers {
-  padding-top: 40px;
+  padding-top: $padding-top-section;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 150px auto 0;
-  max-height: 677px;
+  margin: $margin-top-large auto 0;
+  max-height: $max-height-designers;
   width: 100%;
 }
 
 .designers__signature {
   position: absolute;
-  margin-right: 1050px;
-  margin-top: -50px;
+  margin-right: $margin-right-signature;
+  margin-top: $margin-top-signature;
 }
 
 .designers__slider {
   display: flex;
-  gap: 20px;
+  gap: $slider-gap;
   overflow-x: hidden;
   overflow-y: hidden;
   align-items: flex-end;
@@ -27,13 +29,13 @@
 }
 
 .designers__card-description {
-  width: 337px;
+  width: $card-description-width;
 }
 
 .designers__card {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: $card-gap;
 }
 
 .designers__card-text {
@@ -41,7 +43,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: $breakpoint-large) {
   .designers__slider {
     width: 100%;
     overflow-x: auto;

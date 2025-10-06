@@ -1,16 +1,18 @@
+@import 'vars';
+
 .testimonials__image-with-captions {
   display: flex;
   grid-row: span 2;
   align-items: center;
-  gap: 25px;
+  gap: $testimonials-gap;
 }
 
 .testimonials__caption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 95px;
-  margin-left: 65px;
+  gap: $testimonials-caption-gap;
+  margin-left: $testimonials-caption-margin-left;
 }
 
 .testimonials__caption--vertical-text {
@@ -21,28 +23,28 @@
 .testimonials__signature {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  left: 25px;
+  left: $testimonials-signature-left;
   position: relative;
 }
 
 .testimonials {
   display: grid;
-  max-width: 1165px;
-  margin: 150px auto 0; 
-  grid-template-columns: 50% 1fr 45%;
+  max-width: $max-width-biography;
+  margin: $margin-top-large auto 0;
+  grid-template-columns: $testimonials-grid-template;
 }
 
 .testimonials__cta {
-  grid-column: 3;      
+  grid-column: 3;
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 41px;
-  gap: 41px;
+  margin-top: $testimonials-cta-margin-top;
+  gap: $testimonials-cta-gap;
 }
 
 .testimonials__cta-blockquote {
-  max-width: 216px;
+  max-width: $testimonials-cta-blockquote-max-width;
 }

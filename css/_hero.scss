@@ -1,10 +1,10 @@
 .hero {
     display: flex;
-    background-image: url(../img/background.jpg);
-    background-size: auto 230%;
+    background-image: $hero-bg-image;
+    background-size: $hero-bg-size;
     width: 100%;
-    aspect-ratio: 21 / 9;
-    min-height: 630px;
+    aspect-ratio: $hero-aspect-ratio;
+    min-height: $hero-min-height;
     align-items: center;
     justify-content: center;
     background-position: bottom;
@@ -15,8 +15,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 360px;
-    min-width: 690px;
-    gap: 18px;
-    background-color: white;
+    min-height: $hero-content-min-height;
+    min-width: $hero-content-min-width;
+    gap: $hero-content-gap;
+    background-color: $color-white;
 }

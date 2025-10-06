@@ -1,26 +1,28 @@
+@import 'vars';
+
 .biography {
-  max-width: 1165px;
+  max-width: $max-width-biography;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-height: 840px;
-  margin-top: 150px;
-  gap: 50px;
+  max-height: $max-height-biography;
+  margin-top: $biography-margin-top;
+  gap: $biography-gap;
 }
 
 .biography__img {
-  max-width: 571px;
-  max-height: 840px;
+  max-width: $biography-img-width;
+  max-height: $max-height-biography;
   order: 1;
 }
 
 .biography__text {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  max-height: 840px;
-  line-height: 1.2;
+  gap: $font-size-32;
+  max-height: $max-height-biography;
+  line-height: $line-height-1-2;
   order: 3;
 }
 
@@ -28,15 +30,14 @@
   display: none;
 }
 
-
 .biography-blockquote {
-  width: 370px;
+  width: $biography-blockquote-width;
 }
 
 .biography__signature {
   position: relative;
-  top: -360px;
-  right: 20px;
+  top: $signature-top-offset;
+  right: $signature-right-offset;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   order: 2;
@@ -44,10 +45,10 @@
 
 .line {
   position: relative;
-  top: 11px;
-  background-color: black;
-  width: 20px;
-  height: 6px;
+  top: $line-top-offset;
+  background-color: $color-line;
+  width: $line-width;
+  height: $line-height;
 }
 
 .biography__text h2 {
@@ -62,7 +63,7 @@
   order: 3;
 }
 
-.biography__blockquote{
+.biography__blockquote {
   order: 4;
 }
 

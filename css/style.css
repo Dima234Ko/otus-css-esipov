@@ -127,7 +127,7 @@ button {
   background-image: url(../img/background.jpg);
   background-size: auto 230%;
   width: 100%;
-  aspect-ratio: 21/9;
+  aspect-ratio: 2.3333333333;
   min-height: 630px;
   align-items: center;
   justify-content: center;
@@ -216,6 +216,55 @@ button {
   display: none;
 }
 
+.designers {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px auto 0;
+  max-height: 677px;
+  width: 100%;
+}
+
+.designers__signature {
+  position: absolute;
+  margin-right: 1050px;
+  margin-top: -50px;
+}
+
+.designers__slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: flex-end;
+}
+
+.main {
+  align-items: flex-end;
+}
+
+.designers__card-description {
+  width: 337px;
+}
+
+.designers__card {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.designers__card-text {
+  display: inline;
+  margin: 0;
+}
+
+@media screen and (max-width: 1660px) {
+  .designers__slider {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
 .testimonials__image-with-captions {
   display: flex;
   grid-row: span 2;
