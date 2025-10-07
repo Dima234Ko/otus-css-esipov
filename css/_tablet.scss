@@ -187,9 +187,7 @@
 
     .testimonials {
         @include flex-column($spacing-gap-testimonials);
-        margin-top: $spacing-margin-top-testimonials;
-        margin-left: $spacing-sm;
-        margin-right: $spacing-sm;
+        margin: $spacing-margin-top-testimonials $spacing-sm 0;
     }
 
     .testimonials__cta {

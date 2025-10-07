@@ -1,43 +1,40 @@
 @import 'vars';
+@import 'mixins';
 
 .header {
-    width: 100%;
-    height: $header-height;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 $spacing-sm;
-    box-sizing: border-box;
+  @include flex-row($align: center, $justify: space-between);
+  width: 100%;
+  height: $header-height;
+  padding: 0 $spacing-sm;
+  box-sizing: border-box;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-    width: auto;
-    gap: $nav-gap;
+  @include flex-row($gap: $nav-gap, $align: center);
+  width: auto;
 }
 
 .navigation__list {
-    display: flex;
-    list-style: none;
-    gap: $nav-list-gap;
-    margin: 0;
-    padding: 0;
+  @include flex-row($gap: $nav-list-gap, $align: center);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation__link {
-    font-family: $font-roboto;
-    font-weight: $font-weight-500;
-    font-size: $font-size-24;
-    color: $color-black;
-    text-decoration: none;
-}
+  font-family: $font-roboto;
+  font-weight: $font-weight-500;
+  font-size: $font-size-24;
+  color: $color-black;
+  text-decoration: none;
 
-.navigation__link:hover {
+  &:hover {
     text-decoration: underline;
+  }
 }
 
 .icon img {
-    width: $spacing-lg;
-    height: $spacing-lg;
+  @include full-size-img;
+  width: $spacing-lg;
+  height: $spacing-lg;
 }

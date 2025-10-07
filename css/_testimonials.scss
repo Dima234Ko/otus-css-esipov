@@ -1,17 +1,13 @@
 @import 'vars';
+@import 'mixins';
 
 .testimonials__image-with-captions {
-  display: flex;
+  @include flex-row($align: center, $gap: $testimonials-gap);
   grid-row: span 2;
-  align-items: center;
-  gap: $testimonials-gap;
 }
 
 .testimonials__caption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $spacing-xl;
+  @include flex-column($align: center, $gap: $spacing-xl);
   margin-left: $testimonials-caption-margin-left;
 }
 
@@ -23,26 +19,23 @@
 .testimonials__signature {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  left: $testimonials-signature-left;
   position: relative;
+  left: $testimonials-signature-left;
 }
 
 .testimonials {
   display: grid;
   max-width: $max-width-biography;
-  margin: $spacing-xxl auto 0;
+  margin:$spacing-xxl auto;
   grid-template-columns: $testimonials-grid-template;
 }
 
 .testimonials__cta {
+  @include flex-column($align: center, $gap: $testimonials-cta-gap);
   grid-column: 3;
   grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   margin-top: $testimonials-cta-margin-top;
-  gap: $testimonials-cta-gap;
 }
 
 .testimonials__cta-blockquote {

@@ -1,11 +1,10 @@
 @import 'vars';
+@import 'mixins';
 
 .designers {
+  @include flex-column($gap: null, $align: center);
+  @include block-margin(auto, $spacing-xxl);
   padding-top: $spacing-sm;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: $spacing-xxl auto 0;
   max-height: $max-height-designers;
   width: 100%;
 }
@@ -17,11 +16,9 @@
 }
 
 .designers__slider {
-  display: flex;
-  gap: $spacing-sm;
+  @include flex-row($gap: $spacing-sm, $align: flex-end);
   overflow-x: hidden;
   overflow-y: hidden;
-  align-items: flex-end;
 }
 
 .main {
@@ -33,9 +30,7 @@
 }
 
 .designers__card {
-  display: flex;
-  flex-direction: column;
-  gap: $spacing-md;
+  @include flex-column($gap: $spacing-md);
 }
 
 .designers__card-text {

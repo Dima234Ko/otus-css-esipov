@@ -1,24 +1,21 @@
 @import 'vars';
+@import 'mixins';
 
 .footer {
-  margin: $spacing-xxl auto 0;
+  @include block-margin(auto, $spacing-xxl);
   background-color: $color-black;
   color: $color-white;
 }
 
 .footer__text {
+  @include flex-row($align: center, $justify: space-between);
   margin: 0 $spacing-sm;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: $footer-height;
 }
 
 .footer__contact {
+  @include flex-column($gap: $spacing-xs);
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  gap: $spacing-xs;
 }
 
 .link {
