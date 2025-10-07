@@ -1,14 +1,12 @@
 @import 'vars';
+@import 'mixins';
 
 .biography {
+  @include flex-row($spacing-lg, center, center);
   max-width: $max-width-biography;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
   max-height: $max-height-biography;
+  margin: auto;
   margin-top: $spacing-xxl;
-  gap: $spacing-lg;
 }
 
 .biography__img {
@@ -18,9 +16,7 @@
 }
 
 .biography__text {
-  display: flex;
-  flex-direction: column;
-  gap: $font-size-32;
+  @include flex-column($font-size-32);
   max-height: $max-height-biography;
   line-height: $line-height-1-2;
   order: 3;
@@ -28,7 +24,7 @@
 
 .biography__text--alt,
 .biography__blockquote--alt {
-  display: none;
+  @include hidden;
 }
 
 .biography-blockquote {
@@ -69,5 +65,5 @@
 }
 
 .alt {
-  display: none;
+  @include hidden;
 }

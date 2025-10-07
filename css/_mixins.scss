@@ -1,0 +1,58 @@
+@mixin block-margin($left: 0, $top: null) {
+    margin-left: $left;
+
+    @if $top != null {
+        margin-top: $top;
+    }
+}
+
+@mixin flex-column($gap: null, $align: null, $justify: null) {
+    display: flex;
+    flex-direction: column;
+
+    @if $gap != null {
+        gap: $gap;
+    }
+
+    @if $align != null {
+        align-items: $align;
+    }
+
+    @if $justify != null {
+        justify-content: $justify;
+    }
+}
+
+@mixin flex-row($gap: null, $align: null, $justify: null) {
+    display: flex;
+    flex-direction: row;
+
+    @if $gap != null {
+        gap: $gap;
+    }
+
+    @if $align != null {
+        align-items: $align;
+    }
+
+    @if $justify != null {
+        justify-content: $justify;
+    }
+}
+
+@mixin full-size-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    vertical-align: middle;
+}
+
+@mixin reset-positioning {
+    position: inherit;
+    transform: none;
+}
+
+@mixin hidden {
+    display: none;
+}

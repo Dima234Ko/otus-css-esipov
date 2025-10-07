@@ -1,22 +1,19 @@
 @import 'vars';
+@import 'mixins';
 
 .strengths {
+  @include flex-column(null, center);
   padding-top: $spacing-sm;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: $spacing-xxl auto 0;
   max-width: 100%;
   overflow-x: hidden;
 }
 
 .strengths__content {
-  display: flex;
-  justify-content: center;
+  @include flex-row($spacing-sm, null, center);
   max-height: $strengths-max-height;
   width: 100%;
   overflow-x: auto;
-  gap: $spacing-sm;
 }
 
 .strengths__content-card {
@@ -27,16 +24,12 @@
 }
 
 .strengths__content-card-image {
-  width: 100%;
-  height: 100%;
+  @include full-size-img;
 }
 
 .strengths__content-card-text {
+  @include flex-column($spacing-md, center);
   width: $strengths-card-text-width;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $spacing-md;
   padding: 0 $spacing-lg;
 }
 
@@ -54,6 +47,5 @@
 
 .strengths__signature {
   position: absolute;
-  margin-right: $margin-right-signature;
-  margin-top: $margin-top-signature;
+  @include block-margin($margin-right-signature, $margin-top-signature);
 }

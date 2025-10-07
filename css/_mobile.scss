@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 @media (max-width: 550px) {
     h3 {
@@ -23,8 +24,7 @@
     }
 
     .biography {
-        margin-left: 0;
-        margin-top: 130px;
+        @include block-margin(0, 130px);
     }
 
     .biography__signature {
@@ -35,7 +35,7 @@
         gap: $spacing-gap-biography-text;
     }
 
-    .biography__text--alt{
+    .biography__text--alt {
         line-height: 0.9;
     }
 
@@ -63,10 +63,9 @@
     }
 
     .testimonials {
-        margin-left: 0;
-        margin-right: 0;
+        @include block-margin(20);
     }
-    
+
     .testimonials__cta {
         flex-direction: column;
         gap: $spacing-gap-testimonials-cta;
@@ -85,7 +84,11 @@
         margin-left: $spacing-sm;
         gap: 30px;
     }
-    
+
+    .strengths {
+        margin-left: $spacing-sm;
+    }
+
     .strengths__content-list {
         line-height: 1.2;
     }
@@ -94,15 +97,11 @@
         gap: $spacing-gap-testimonials-cta;
     }
 
-    .strengths {
-        margin-left: $spacing-sm;
-    }
-
     .footer__product {
         margin-left: 62%;
     }
 
     .footer__text {
-        gap: $spacing-gap-footer-small;
+        @include flex-column($gap: $spacing-gap-footer-small);
     }
 }

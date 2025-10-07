@@ -1,24 +1,19 @@
 @import 'vars';
+@import 'mixins';
 
 .hero {
-    display: flex;
+    @include flex-row(null, center, center);
     background-image: $hero-bg-image;
     background-size: $hero-bg-size;
     width: 100%;
     aspect-ratio: $hero-aspect-ratio;
     min-height: $hero-min-height;
-    align-items: center;
-    justify-content: center;
     background-position: bottom;
 }
 
 .hero__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column($hero-content-gap, center, center);
     min-height: $hero-content-min-height;
     min-width: $hero-content-min-width;
-    gap: $hero-content-gap;
     background-color: $color-white;
 }
