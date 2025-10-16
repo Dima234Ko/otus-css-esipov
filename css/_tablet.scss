@@ -10,6 +10,14 @@
         font-size: $font-size-h4-mobile;
     }
 
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 0;
+        vertical-align: middle;
+    }
+
     .header {
         justify-content: center;
     }
