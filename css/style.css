@@ -79,6 +79,26 @@ button {
   font-weight: 400;
   font-style: normal;
 }
+.modal {
+  display: none;
+}
+
+.modal.show {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.103);
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_form {
+  background-color: rgb(255, 255, 255);
+  width: 480px;
+  padding: 30px;
+}
+
 body {
   font-family: "Roboto", serif;
   font-weight: 700;
@@ -197,17 +217,6 @@ blockquote {
 }
 .navigation__link:hover {
   text-decoration: underline;
-}
-
-.icon img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 0;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
 }
 
 .hero {
@@ -435,15 +444,6 @@ blockquote {
   overflow: hidden;
 }
 
-.strengths__content-card-image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 0;
-  vertical-align: middle;
-}
-
 .strengths__content-card-text {
   display: flex;
   flex-direction: column;
@@ -505,6 +505,14 @@ blockquote {
   h4 {
     font-size: 18px;
   }
+  img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 0;
+    vertical-align: middle;
+  }
   .header {
     justify-content: center;
   }
@@ -549,14 +557,6 @@ blockquote {
   }
   .hero__content h2 {
     margin-top: 50px;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border: 0;
-    vertical-align: middle;
   }
   .biography {
     margin-top: 150px;
