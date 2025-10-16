@@ -23,10 +23,6 @@
   overflow: hidden;
 }
 
-.strengths__content-card-image {
-  @include full-size-img;
-}
-
 .strengths__content-card-text {
   @include flex-column($spacing-md, center);
   width: $strengths-card-text-width;

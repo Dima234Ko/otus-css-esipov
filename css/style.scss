@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display:wght@400..900&family=Roboto:wght@100..900&display=swap');
 @import 'vars';
+@import 'mixins';
 @import 'reset';
 @import 'fonts';
 @import 'sizes';
@@ -10,5 +11,7 @@
 @import 'testimonials';
 @import 'strong';
 @import 'footer';
+@import 'modal';
 @import 'tablet';
 @import 'mobile';
+

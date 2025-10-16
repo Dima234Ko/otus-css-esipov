@@ -65,10 +65,6 @@
         margin-top: $spacing-gap-hero-title;
     }
 
-    img {
-        @include full-size-img;
-    }
-
     .biography {
         margin-top: $spacing-margin-top-biography;
         gap: 0;

@@ -199,17 +199,6 @@ blockquote {
   text-decoration: underline;
 }
 
-.icon img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 0;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-}
-
 .hero {
   display: flex;
   flex-direction: row;
@@ -435,15 +424,6 @@ blockquote {
   overflow: hidden;
 }
 
-.strengths__content-card-image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 0;
-  vertical-align: middle;
-}
-
 .strengths__content-card-text {
   display: flex;
   flex-direction: column;
@@ -498,6 +478,22 @@ blockquote {
   color: white;
 }
 
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.103);
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_form {
+  background-color: rgb(255, 255, 255);
+  width: 480px;
+  padding: 30px;
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 70px;
@@ -549,14 +545,6 @@ blockquote {
   }
   .hero__content h2 {
     margin-top: 50px;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border: 0;
-    vertical-align: middle;
   }
   .biography {
     margin-top: 150px;
