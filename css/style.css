@@ -479,6 +479,10 @@ blockquote {
 }
 
 .modal {
+  display: none;
+}
+
+.modal.show {
   position: fixed;
   background: rgba(0, 0, 0, 0.103);
   inset: 0;

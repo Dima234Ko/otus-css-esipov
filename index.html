@@ -21,7 +21,7 @@
                 <li class="navigation__item navigation__item--color"><a class="navigation__link"
                         href="#strengths">Strong points</a></li>
             </ul>
-            <div class="icon">
+            <div class="icon" id="open_form">
                 <img src="./img/message.svg" alt="Message">
             </div>
         </nav>
@@ -242,6 +242,17 @@
             </div>
         </form>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const open_form = document.querySelector('#open_form');
+          const modal = document.querySelector('.modal');
+          open_form.addEventListener('click', function () {
+            modal.classList.toggle('show');
+          });
+        });
+    </script>
+      
 
 
 
