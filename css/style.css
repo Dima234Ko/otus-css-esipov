@@ -498,6 +498,11 @@ blockquote {
   color: white;
 }
 
+.no_overflow {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 70px;

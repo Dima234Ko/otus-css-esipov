@@ -247,14 +247,13 @@
         document.addEventListener('DOMContentLoaded', function () {
           const open_form = document.querySelector('#open_form');
           const modal = document.querySelector('.modal');
+          const body = document.querySelector('body');
           open_form.addEventListener('click', function () {
             modal.classList.toggle('show');
+            body.classList.toggle('no_overflow');
           });
         });
     </script>
-      
-
-
 
 </body>
 
