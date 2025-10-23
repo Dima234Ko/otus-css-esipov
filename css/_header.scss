@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 .navigation {
   @include flex-row($gap: $nav-gap, $align: center);
   width: auto;
