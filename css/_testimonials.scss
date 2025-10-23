@@ -1,6 +1,12 @@
 @import 'vars';
 @import 'mixins';
 
+.testimonials__image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 .testimonials__image-with-captions {
   @include flex-row($align: center, $gap: $testimonials-gap);
   grid-row: span 2;

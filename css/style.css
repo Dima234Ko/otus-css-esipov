@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display:wght@400..900&family=Roboto:wght@100..900&display=swap");
 * {
   margin: 0;
@@ -247,13 +246,19 @@ blockquote {
 .biography {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 125px;
   align-items: center;
   justify-content: center;
   max-width: 1165px;
   max-height: 840px;
   margin: auto;
   margin-top: 150px;
+  position: relative;
+}
+
+.biography img {
+  width: 100%;
+  height: auto;
 }
 
 .biography__img {
@@ -281,9 +286,9 @@ blockquote {
 }
 
 .biography__signature {
-  position: relative;
-  top: -360px;
-  right: 20px;
+  position: absolute;
+  top: 1%;
+  right: 46%;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   order: 2;
@@ -333,8 +338,8 @@ blockquote {
 
 .designers__signature {
   position: absolute;
-  margin-right: 1050px;
-  margin-top: -50px;
+  margin-right: 73%;
+  margin-top: -4%;
 }
 
 .designers__slider {
@@ -380,6 +385,12 @@ blockquote {
     overflow-x: auto;
   }
 }
+.testimonials__image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 .testimonials__image-with-captions {
   display: flex;
   flex-direction: row;
@@ -526,7 +537,7 @@ blockquote {
 .footer__product h6,
 .footer__product h5 {
   display: inline-block;
-  margin: 0; /* убираем лишние отступы браузера */
+  margin: 0;
 }
 
 .no_overflow {
@@ -534,7 +545,7 @@ blockquote {
   overflow-y: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   h2 {
     font-size: 70px;
   }
@@ -606,6 +617,9 @@ blockquote {
     height: 400px;
     order: 2;
   }
+  .biography img {
+    height: 100%;
+  }
   .biography__text,
   .biography__text--alt {
     order: 1;
@@ -621,9 +635,12 @@ blockquote {
     font-size: 64px;
     margin-top: 90px;
     order: 3;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
   .biography__signature {
-    top: -910px;
+    top: -7.5%;
+    right: 4%;
     margin: 0 1% 0 auto;
     writing-mode: horizontal-tb;
     transform: none;
@@ -690,6 +707,9 @@ blockquote {
   .designers__card-description {
     line-height: 1.2;
     width: auto;
+  }
+  .designers__card-description__main {
+    margin-left: 0px;
   }
   .testimonials {
     display: flex;
@@ -776,7 +796,7 @@ blockquote {
     order: -1;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 585px) {
   h3 {
     line-height: 1.1;
   }
@@ -798,7 +818,7 @@ blockquote {
     margin-top: 130px;
   }
   .biography__signature {
-    top: -976px;
+    top: -10.5%;
   }
   .biography__text {
     gap: 65px;
@@ -858,5 +878,13 @@ blockquote {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+@media (max-width: 365px) {
+  h2 {
+    font-size: 60px;
+  }
+  .navigation__list {
+    width: 110%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -2,11 +2,17 @@
 @import 'mixins';
 
 .biography {
-  @include flex-row($spacing-lg, center, center);
+  @include flex-row(125px, center, center);
   max-width: $max-width-biography;
   max-height: $max-height-biography;
   margin: auto;
   margin-top: $spacing-xxl;
+  position: relative;
+}
+
+.biography img {
+  width: 100%;
+  height: auto;
 }
 
 .biography__img {
@@ -32,9 +38,9 @@
 }
 
 .biography__signature {
-  position: relative;
-  top: $signature-top-offset;
-  right: $signature-right-offset;
+  position: absolute; 
+  top: 1%;
+  right: 46%;    
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   order: 2;

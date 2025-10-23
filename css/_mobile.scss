@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'mixins';
 
-@media (max-width: 550px) {
+@media (max-width: 585px) {
     h3 {
         line-height: 1.1;
     }
@@ -28,7 +28,7 @@
     }
 
     .biography__signature {
-        top: -976px;
+        top: -10.5%;
     }
 
     .biography__text {
@@ -104,4 +104,16 @@
     .footer__text {
         @include flex-column($gap: $spacing-gap-footer-small);
     }
+}
+
+@media (max-width: 365px) {
+    
+    h2 {
+        font-size: 60px;
+    }
+
+    .navigation__list {
+        width: 110%;
+    }
+
 }

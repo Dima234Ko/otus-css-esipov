@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'mixins';
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     h2 {
         font-size: $font-size-h2-mobile;
     }
@@ -87,6 +87,10 @@
         order: 2;
     }
 
+    .biography img {
+        height: 100%;
+    }
+
     .biography__text,
     .biography__text--alt {
         order: 1;
@@ -104,10 +108,12 @@
         font-size: $font-size-h2-biography-mobile;
         margin-top: $spacing-margin-blockquote-mobile;
         order: 3;
+        max-width: max-content;
     }
 
     .biography__signature {
-        top: -910px;
+        top: -7.5%;
+        right: 4%;
         margin: 0 1% 0 auto;
         writing-mode: horizontal-tb;
         transform: none;
@@ -187,6 +193,10 @@
     .designers__card-description {
         line-height: 1.2;
         width: auto;
+    }
+
+    .designers__card-description__main {
+        margin-left: 0px;
     }
 
     .testimonials {
