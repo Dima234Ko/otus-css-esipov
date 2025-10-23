@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .footer {
-  @include block-margin(auto, $spacing-xxl);
+  @include block-margin(auto, 135px);
   background-color: $color-black;
   color: $color-white;
 }
@@ -20,4 +20,22 @@
 
 .link {
   color: $color-white;
+}
+
+.footer__product{
+  margin-left: 120px;
+}
+
+.footer__product h5 {
+  font-size: 24px;
+}
+
+.footer__product h6 {
+  font-size: 18px;
+}
+
+.footer__product h6,
+.footer__product h5 {
+  display: inline-block;
+  margin: 0; /* убираем лишние отступы браузера */
 }

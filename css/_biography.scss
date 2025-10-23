@@ -16,7 +16,7 @@
 }
 
 .biography__text {
-  @include flex-column($font-size-32);
+  @include flex-column(25px);
   max-height: $max-height-biography;
   line-height: $line-height-1-2;
   order: 3;
@@ -50,10 +50,12 @@
 
 .biography__text h2 {
   order: 1;
+  max-width: 250px;
 }
 
 .biography__text--main {
   order: 2;
+  margin-top: 20px;
 }
 
 .biography__text .line {
@@ -62,6 +64,7 @@
 
 .biography__blockquote {
   order: 4;
+  max-width: 370px
 }
 
 .alt {

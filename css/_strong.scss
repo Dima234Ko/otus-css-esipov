@@ -4,29 +4,30 @@
 .strengths {
   @include flex-column(null, center);
   padding-top: $spacing-sm;
-  margin: $spacing-xxl auto 0;
+  margin: 180px auto 0;
   max-width: 100%;
   overflow-x: hidden;
 }
 
 .strengths__content {
-  @include flex-row($spacing-sm, null, center);
+  @include flex-row(0px, null);
   max-height: $strengths-max-height;
   width: 100%;
   overflow-x: auto;
+  margin-left: 40px;
 }
 
 .strengths__content-card {
   height: $strengths-card-height;
-  width: $strengths-card-width;
+  width: 360px;
   flex-shrink: 0;
   overflow: hidden;
 }
 
 .strengths__content-card-text {
-  @include flex-column($spacing-md, center);
+  @include flex-column(30px, center);
   width: $strengths-card-text-width;
-  padding: 0 $spacing-lg;
+  padding: 0 20px;
 }
 
 .strengths__content-card-text h2 {
