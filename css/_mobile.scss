@@ -106,14 +106,30 @@
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 385px) {
     
     h2 {
         font-size: 60px;
     }
 
+    .biography__text h2 {
+        font-size: 56px;
+    }
+
+    .biography__blockquote--alt {
+        font-size: 24px;
+    }
+
+    .biography__signature {
+        top: -5%
+    }
+
     .navigation__list {
         width: 110%;
+    }
+
+    .designers__signature {
+        margin: -45px 0 auto -70%;
     }
 
 }

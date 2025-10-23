@@ -349,7 +349,9 @@ blockquote {
   align-items: flex-end;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-left: 45px;
+  margin-left: 2%;
+  width: 98%;
+  justify-content: center;
 }
 
 .main {
@@ -381,8 +383,12 @@ blockquote {
 
 @media screen and (max-width: 1660px) {
   .designers__slider {
-    width: 100%;
     overflow-x: auto;
+  }
+}
+@media (max-width: 1500px) {
+  .designers__slider {
+    justify-content: flex-start;
   }
 }
 .testimonials__image {
@@ -448,7 +454,7 @@ blockquote {
   padding-top: 20px;
   margin: 180px auto 0;
   max-width: 100%;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .strengths__content {
@@ -456,9 +462,10 @@ blockquote {
   flex-direction: row;
   gap: 0px;
   max-height: 613px;
-  width: 100%;
+  justify-content: center;
+  width: 98%;
   overflow-x: auto;
-  margin-left: 40px;
+  margin-left: 2%;
 }
 
 .strengths__content-card {
@@ -491,10 +498,15 @@ blockquote {
 
 .strengths__signature {
   position: absolute;
-  margin-left: 1050px;
-  margin-top: -50px;
+  top: -8%;
+  left: 10%;
 }
 
+@media (max-width: 1500px) {
+  .strengths__content {
+    justify-content: flex-start;
+  }
+}
 .footer {
   margin-left: auto;
   margin-top: 135px;
@@ -592,6 +604,9 @@ blockquote {
     color: #A07C72;
   }
   .hero {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
     margin-top: 1px;
     align-items: start;
     background-size: auto 110%;
@@ -761,6 +776,7 @@ blockquote {
   }
   .strengths__content {
     justify-content: flex-start;
+    gap: 20px;
   }
   .strengths__content-card {
     height: 450px;
@@ -794,6 +810,11 @@ blockquote {
   .footer__product {
     margin-left: 75%;
     order: -1;
+  }
+}
+@media (max-width: 675px) {
+  a {
+    font-size: 12px;
   }
 }
 @media (max-width: 585px) {
@@ -880,11 +901,23 @@ blockquote {
     gap: 20px;
   }
 }
-@media (max-width: 365px) {
+@media (max-width: 385px) {
   h2 {
     font-size: 60px;
   }
+  .biography__text h2 {
+    font-size: 56px;
+  }
+  .biography__blockquote--alt {
+    font-size: 24px;
+  }
+  .biography__signature {
+    top: -5%;
+  }
   .navigation__list {
     width: 110%;
+  }
+  .designers__signature {
+    margin: -45px 0 auto -70%;
   }
 }/*# sourceMappingURL=style.css.map */

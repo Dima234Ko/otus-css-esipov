@@ -57,6 +57,9 @@
     }
 
     .hero {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
         margin-top: 1px;
         align-items: start;
         background-size: auto 110%;
@@ -258,6 +261,7 @@
 
     .strengths__content {
         justify-content: flex-start;
+        gap: 20px;
     }
 
     .strengths__content-card {
@@ -295,5 +299,12 @@
     .footer__product {
         margin-left: 75%;
         order: -1;
+    }
+}
+
+
+@media (max-width: 675px) {
+    a {
+        font-size: 12px;
     }
 }

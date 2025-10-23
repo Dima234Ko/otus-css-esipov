@@ -6,15 +6,16 @@
   padding-top: $spacing-sm;
   margin: 180px auto 0;
   max-width: 100%;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .strengths__content {
   @include flex-row(0px, null);
   max-height: $strengths-max-height;
-  width: 100%;
+  justify-content: center;
+  width: 98%;
   overflow-x: auto;
-  margin-left: 40px;
+  margin-left: 2%;
 }
 
 .strengths__content-card {
@@ -44,5 +45,12 @@
 
 .strengths__signature {
   position: absolute;
-  @include block-margin($margin-right-signature, $margin-top-signature);
+  top: -8%;
+  left: 10%;
+}
+
+@media (max-width: 1500px) { 
+  .strengths__content {
+    justify-content: flex-start;
+  }
 }

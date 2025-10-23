@@ -19,7 +19,9 @@
   @include flex-row($gap: $spacing-sm, $align: flex-end);
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-left: 45px;
+  margin-left: 2%;
+  width: 98%;
+  justify-content: center;
 }
 
 .main {
@@ -49,7 +51,12 @@
 
 @media screen and (max-width: $breakpoint-large) {
   .designers__slider {
-    width: 100%;
     overflow-x: auto;
+  }
+}
+
+@media (max-width: 1500px) { 
+  .designers__slider {
+    justify-content: flex-start;
   }
 }
