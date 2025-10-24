@@ -43,11 +43,14 @@
   margin-bottom: $strengths-item-margin-bottom;
 }
 
+
 .strengths__signature {
   position: absolute;
   left: 50%;
-  transform: translate(-425%, -210%);
+  top: 50%;
+  transform: translate(calc(-50% - 27vw), calc(-50% - 25.5vh))
 }
+
 
 @media (max-width: 1500px) { 
   .strengths__content {

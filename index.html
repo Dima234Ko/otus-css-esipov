@@ -223,21 +223,27 @@
             </a>
             <div class="modal_form__input_contanier">
                 <h4>Name</h4>
-                <input class="input" type="text" placeholder="name@email.com">
-                <div class="modal_form__input-icon">@</div>
+                <input class="modal_form__input" type="text" id="name-input" name="name" placeholder="3+ Characters">
+                <div class="modal_form__input_icon">
+                    <img src="./img/user.svg" alt="User icon">
+                </div>
             </div>
             <div class="modal_form__input_contanier">
                 <h4>E-mail</h4>
-                <input class="modal_form__input" type="email" placeholder="name@email.com">
-                <div class="modal_form__input_icon">@</div>
+                <input class="modal_form__input" type="email" id="email-input" name="email"  placeholder="name@email.com">
+                <div class="modal_form__input_icon">
+                    <img src="./img/mail.svg" alt="Mail icon">
+                </div>
             </div>
             <div class="modal_form__input_contanier">
                 <h4>E-mail</h4>
-                <textarea class="modal_form__textaria" placeholder="name@email.com"></textarea>
-                <div class="modal_form__input_icon">@</div>
+                <textarea class="modal_form__textarea" id="textarea-input" name="textarea" placeholder="name@email.com"></textarea>
+                <div class="modal_form__input_icon">
+                    <img src="./img/mail.svg" alt="Mail icon">
+                </div>
             </div>
             <div class="modal_form__button-container">
-                <button class="modal_form__button-container_button">Cancel</button>
+                <button class="modal_form__button-container_button" id="close_form">Cancel</button>
                 <button class="modal_form__button-container_button">Send</button>
             </div>
         </form>
@@ -246,13 +252,21 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
           const open_form = document.querySelector('#open_form');
+          const close_form = document.querySelector('#close_form');
           const modal = document.querySelector('.modal');
           const body = document.querySelector('body');
+          
           open_form.addEventListener('click', function () {
             modal.classList.toggle('show');
             body.classList.toggle('no_overflow');
           });
+
+          close_form.addEventListener('click', function () { 
+            modal.classList.remove('show');
+            body.classList.remove('no_overflow');
+          });
         });
+
     </script>
 
 </body>
