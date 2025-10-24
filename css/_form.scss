@@ -7,7 +7,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
 }
@@ -18,23 +18,34 @@
     line-height: 1.5;
 }
 
-.modal_form__input {
+.modal_form__input_contanier {
     margin-bottom: 15px;
 }
 
-.modal_form__input h4 {
+.modal_form__input_contanier h4 {
     font-size: 12px;
     color: #333;
     margin-bottom: 5px;
 }
 
-.modal_form__input input {
+.modal_form__input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
+}
+
+.modal_form__textaria {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 .modal_form__input-icon {
