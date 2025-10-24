@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'mixins';
 
-@media (max-width: 550px) {
+@media (max-width: 585px) {
     h3 {
         line-height: 1.1;
     }
@@ -28,7 +28,7 @@
     }
 
     .biography__signature {
-        top: -976px;
+        top: -10.5%;
     }
 
     .biography__text {
@@ -59,7 +59,7 @@
     }
 
     .designers__signature {
-        margin: -45px 0 auto -80%;
+        transform: translate(calc(-50% - 31.5vw), calc(-50% - 3.5vh));
     }
 
     .testimonials {
@@ -72,7 +72,7 @@
     }
 
     .testimonials__signature {
-        margin: 0 11% 0 auto;
+        transform: (calc(-50% - 29.5vw), calc(-50% - 19.5vh));
     }
 
     .testimonials__cta-image {
@@ -87,6 +87,10 @@
 
     .strengths {
         margin-left: $spacing-sm;
+    }
+
+    .strengths__signature {
+        transform: translate(calc(-50% - 31.5vw), calc(-50% - 20.5vh));
     }
 
     .strengths__content-list {
@@ -104,4 +108,30 @@
     .footer__text {
         @include flex-column($gap: $spacing-gap-footer-small);
     }
+}
+
+@media (max-width: 385px) {
+    
+    h2 {
+        font-size: 60px;
+    }
+
+    .biography__text h2 {
+        font-size: 56px;
+    }
+
+    .biography__blockquote--alt {
+        font-size: 24px;
+    }
+
+    .biography__signature {
+        top: -5%
+    }
+
+    .navigation__list {
+        width: 110%;
+    }
+
+
+
 }

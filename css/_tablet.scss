@@ -1,13 +1,21 @@
 @import 'vars';
 @import 'mixins';
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     h2 {
         font-size: $font-size-h2-mobile;
     }
 
     h4 {
         font-size: $font-size-h4-mobile;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 0;
+        vertical-align: middle;
     }
 
     .header {
@@ -49,6 +57,9 @@
     }
 
     .hero {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
         margin-top: 1px;
         align-items: start;
         background-size: auto 110%;
@@ -65,10 +76,6 @@
         margin-top: $spacing-gap-hero-title;
     }
 
-    img {
-        @include full-size-img;
-    }
-
     .biography {
         margin-top: $spacing-margin-top-biography;
         gap: 0;
@@ -81,6 +88,10 @@
         max-width: none;
         height: 400px;
         order: 2;
+    }
+
+    .biography img {
+        height: 100%;
     }
 
     .biography__text,
@@ -100,10 +111,12 @@
         font-size: $font-size-h2-biography-mobile;
         margin-top: $spacing-margin-blockquote-mobile;
         order: 3;
+        max-width: max-content;
     }
 
     .biography__signature {
-        top: -910px;
+        top: -7.5%;
+        right: 4%;
         margin: 0 1% 0 auto;
         writing-mode: horizontal-tb;
         transform: none;
@@ -162,10 +175,6 @@
         width: calc(100% - #{$spacing-sm});
     }
 
-    .designers__signature {
-        margin: -45px 0 auto -87%;
-    }
-
     .designers__card {
         width: $width-designers-img-mobile;
         height: 520px;
@@ -183,6 +192,14 @@
     .designers__card-description {
         line-height: 1.2;
         width: auto;
+    }
+
+    .designers__signature {
+        transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
+    }
+
+    .designers__card-description__main {
+        margin-left: 0px;
     }
 
     .testimonials {
@@ -238,12 +255,12 @@
     }
 
     .strengths__signature {
-        @include reset-positioning;
-        margin: 0 auto 30px 1%;
+        transform: translate(calc(-50% - 37.5vw), calc(-50% - 19.5vh));
     }
 
     .strengths__content {
         justify-content: flex-start;
+        gap: 20px;
     }
 
     .strengths__content-card {
@@ -281,5 +298,12 @@
     .footer__product {
         margin-left: 75%;
         order: -1;
+    }
+}
+
+
+@media (max-width: 675px) {
+    a {
+        font-size: 12px;
     }
 }

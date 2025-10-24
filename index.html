@@ -21,7 +21,7 @@
                 <li class="navigation__item navigation__item--color"><a class="navigation__link"
                         href="#strengths">Strong points</a></li>
             </ul>
-            <div class="icon">
+            <div class="icon" id="open_form">
                 <img src="./img/message.svg" alt="Message">
             </div>
         </nav>
@@ -76,7 +76,7 @@
         <div class="designers__slider">
             <article class="designers__card designers__card--main">
                 <img src="./img/slider_1.jpg" alt="Jess Wonder" width="572" height="538">
-                <div class="designers__card-description">
+                <div class="designers__card-description__main">
                     <div><span>Jess Wonder</span></div>
                     <div>
                         <span>From/</span>
@@ -206,13 +206,69 @@
                 <a class="link" href="mailto:info@modstudio.com" class="email">info@modstudio.com</a>
             </div>
             <div class="footer__product">
-                <h6>A product of MOD</h6>
+                <h6>A product of</h6> <h5>MOD</h5> 
             </div>
             <div class="footer__rights">
                 <p>© 2023 Mod Media. All rights reserved</p>
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <form class="modal_form" action="">
+            <h1>Get in touch</h1>
+            <a class="modal_form__text">
+                Do you have any questions? Have something to say?
+                Don't be shy, write to us:
+            </a>
+            <div class="modal_form__input_contanier">
+                <h4>Name</h4>
+                <input class="modal_form__input" type="text" id="name-input" name="name" placeholder="3+ Characters">
+                <div class="modal_form__input_icon">
+                    <img src="./img/user.svg" alt="User icon">
+                </div>
+            </div>
+            <div class="modal_form__input_contanier">
+                <h4>E-mail</h4>
+                <input class="modal_form__input" type="email" id="email-input" name="email"  placeholder="name@email.com">
+                <div class="modal_form__input_icon">
+                    <img src="./img/mail.svg" alt="Mail icon">
+                </div>
+            </div>
+            <div class="modal_form__input_contanier">
+                <h4>E-mail</h4>
+                <textarea class="modal_form__textarea" id="textarea-input" name="textarea" placeholder="name@email.com"></textarea>
+                <div class="modal_form__input_icon">
+                    <img src="./img/mail.svg" alt="Mail icon">
+                </div>
+            </div>
+            <div class="modal_form__button-container">
+                <button class="modal_form__button-container_button" id="close_form">Cancel</button>
+                <button class="modal_form__button-container_button">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const open_form = document.querySelector('#open_form');
+          const close_form = document.querySelector('#close_form');
+          const modal = document.querySelector('.modal');
+          const body = document.querySelector('body');
+          
+          open_form.addEventListener('click', function () {
+            modal.classList.toggle('show');
+            body.classList.toggle('no_overflow');
+          });
+
+          close_form.addEventListener('click', function () { 
+            modal.classList.remove('show');
+            body.classList.remove('no_overflow');
+          });
+        });
+
+    </script>
+
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 
 .designers {
   @include flex-column($gap: null, $align: center);
-  @include block-margin(auto, $spacing-xxl);
+  @include block-margin(auto, 190px);
   padding-top: $spacing-sm;
   max-height: $max-height-designers;
   width: 100%;
@@ -11,14 +11,17 @@
 
 .designers__signature {
   position: absolute;
-  margin-right: $margin-right-signature;
-  margin-top: $margin-top-signature;
+  left: 50%;
+  transform: translate(calc(-50% - 35.5vw), calc(-50% - 3.2vh));
 }
 
 .designers__slider {
   @include flex-row($gap: $spacing-sm, $align: flex-end);
   overflow-x: hidden;
   overflow-y: hidden;
+  margin-left: 2%;
+  width: 98%;
+  justify-content: center;
 }
 
 .main {
@@ -27,20 +30,33 @@
 
 .designers__card-description {
   width: $card-description-width;
+  line-height: 18px;
+}
+
+.designers__card-description__main {
+  width: $card-description-width;
+  margin-left: 235px;
+  line-height: 18px;
 }
 
 .designers__card {
-  @include flex-column($gap: $spacing-md);
+  @include flex-column($gap: 23px);
 }
 
 .designers__card-text {
   display: inline;
   margin: 0;
+  letter-spacing: -0.6px;
 }
 
 @media screen and (max-width: $breakpoint-large) {
   .designers__slider {
-    width: 100%;
     overflow-x: auto;
+  }
+}
+
+@media (max-width: 1500px) { 
+  .designers__slider {
+    justify-content: flex-start;
   }
 }

@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 .navigation {
   @include flex-row($gap: $nav-gap, $align: center);
   width: auto;
@@ -33,8 +37,3 @@
   }
 }
 
-.icon img {
-  @include full-size-img;
-  width: $spacing-lg;
-  height: $spacing-lg;
-}

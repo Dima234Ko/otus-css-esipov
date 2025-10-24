@@ -1,0 +1,111 @@
+.no_overflow {
+    overflow: hidden;
+}
+
+.modal_form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    top: 75px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 475px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.modal_form h1 {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.modal_form__text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.modal_form__input_contanier {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.modal_form__input_contanier h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.modal_form__input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.modal_form__input_icon {
+    font-size: 24px;
+    position: absolute;
+    right: 14px;
+    top: 29px;
+}
+
+.modal_form__textarea {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 112px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.modal_form__input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+}
+
+.modal_form__button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_form__button-container_button {
+    padding: 10px 20px;
+    border: solid #B3B3B3 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 212px;
+    height: 52px;
+}
+
+.modal_form__button-container_button:first-child {
+    background: #fff;
+    color: #000;
+}
+
+.modal_form__button-container_button:last-child {
+    border: none;
+    background: #000;
+    color: #fff;
+}
+
+.modal_form__input::placeholder,
+.modal_form__textarea::placeholder {
+    font-family: "Roboto", serif;
+    color: #999;
+    font-size: 14px;
+    opacity: 1; 
+}
