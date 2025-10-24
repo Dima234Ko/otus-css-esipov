@@ -175,10 +175,6 @@
         width: calc(100% - #{$spacing-sm});
     }
 
-    .designers__signature {
-        margin: -45px 0 auto -87%;
-    }
-
     .designers__card {
         width: $width-designers-img-mobile;
         height: 520px;
@@ -196,6 +192,10 @@
     .designers__card-description {
         line-height: 1.2;
         width: auto;
+    }
+
+    .designers__signature {
+        transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
     }
 
     .designers__card-description__main {
@@ -255,8 +255,7 @@
     }
 
     .strengths__signature {
-        @include reset-positioning;
-        margin: 0 auto 30px 1%;
+        transform: translate(calc(-50% - 37.5vw), calc(-50% - 19.5vh));
     }
 
     .strengths__content {

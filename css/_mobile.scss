@@ -59,7 +59,7 @@
     }
 
     .designers__signature {
-        margin: -45px 0 auto -80%;
+        transform: translate(calc(-50% - 31.5vw), calc(-50% - 3.5vh));
     }
 
     .testimonials {
@@ -72,7 +72,7 @@
     }
 
     .testimonials__signature {
-        margin: 0 11% 0 auto;
+        transform: (calc(-50% - 29.5vw), calc(-50% - 19.5vh));
     }
 
     .testimonials__cta-image {
@@ -87,6 +87,10 @@
 
     .strengths {
         margin-left: $spacing-sm;
+    }
+
+    .strengths__signature {
+        transform: translate(calc(-50% - 31.5vw), calc(-50% - 20.5vh));
     }
 
     .strengths__content-list {
@@ -128,8 +132,6 @@
         width: 110%;
     }
 
-    .designers__signature {
-        margin: -45px 0 auto -70%;
-    }
+
 
 }

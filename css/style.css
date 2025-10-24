@@ -824,9 +824,6 @@ blockquote {
     margin-left: 20px;
     width: calc(100% - 20px);
   }
-  .designers__signature {
-    margin: -45px 0 auto -87%;
-  }
   .designers__card {
     width: 310px;
     height: 520px;
@@ -841,6 +838,9 @@ blockquote {
   .designers__card-description {
     line-height: 1.2;
     width: auto;
+  }
+  .designers__signature {
+    transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
   }
   .designers__card-description__main {
     margin-left: 0px;
@@ -889,9 +889,7 @@ blockquote {
     margin-left: 20px;
   }
   .strengths__signature {
-    position: inherit;
-    transform: none;
-    margin: 0 auto 30px 1%;
+    transform: translate(calc(-50% - 37.5vw), calc(-50% - 19.5vh));
   }
   .strengths__content {
     justify-content: flex-start;
@@ -982,7 +980,7 @@ blockquote {
     padding-left: 20px;
   }
   .designers__signature {
-    margin: -45px 0 auto -80%;
+    transform: translate(calc(-50% - 31.5vw), calc(-50% - 3.5vh));
   }
   .testimonials {
     margin-left: 20;
@@ -992,7 +990,7 @@ blockquote {
     gap: 22px;
   }
   .testimonials__signature {
-    margin: 0 11% 0 auto;
+    transform: calc(-50% - 29.5vw), calc(-50% - 19.5vh);
   }
   .testimonials__cta-image {
     width: 91%;
@@ -1004,6 +1002,9 @@ blockquote {
   }
   .strengths {
     margin-left: 20px;
+  }
+  .strengths__signature {
+    transform: translate(calc(-50% - 31.5vw), calc(-50% - 20.5vh));
   }
   .strengths__content-list {
     line-height: 1.2;
@@ -1035,8 +1036,5 @@ blockquote {
   }
   .navigation__list {
     width: 110%;
-  }
-  .designers__signature {
-    margin: -45px 0 auto -70%;
   }
 }/*# sourceMappingURL=style.css.map */
