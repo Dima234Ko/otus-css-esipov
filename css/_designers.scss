@@ -60,3 +60,11 @@
     justify-content: flex-start;
   }
 }
+
+
+@media (min-width: 1500px) { 
+  .designers__signature {
+    transform: translate(calc(-50% - 385px), calc(-50% - 6vh));
+  }
+}
+
