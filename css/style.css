@@ -289,8 +289,7 @@ blockquote {
 }
 
 .biography__text--alt,
-.biography__list--alt,
-.biography__blockquote--alt {
+.biography__list--alt {
   display: none;
 }
 
@@ -716,11 +715,17 @@ blockquote {
 }
 
 @media (max-width: 900px) {
-  h2 {
+  h1 {
     font-size: 70px;
+  }
+  h2 {
+    font-size: 18px;
   }
   h4 {
     font-size: 18px;
+  }
+  h5 {
+    font-size: 70px;
   }
   img {
     width: 100%;
@@ -734,8 +739,8 @@ blockquote {
     justify-content: center;
   }
   .navigation__item {
+    margin-left: 18px;
     position: relative;
-    overflow: hidden;
     display: inline-block;
     width: 1ch;
     white-space: nowrap;
@@ -747,7 +752,7 @@ blockquote {
     display: none;
   }
   .navigation {
-    gap: 7vw;
+    gap: 3vw;
   }
   .navigation__list {
     display: block;
@@ -768,18 +773,21 @@ blockquote {
     margin-top: 1px;
     align-items: start;
     background-size: auto 110%;
+    min-height: 656px;
   }
   .hero__content {
+    gap: 15px;
     min-height: auto;
     height: 270px;
     width: 100%;
     justify-content: flex-start;
   }
-  .hero__content h2 {
+  .hero__content h1 {
+    letter-spacing: -0.7px;
     margin-top: 50px;
   }
   .biography {
-    margin-top: 150px;
+    margin-top: 120px;
     gap: 0;
     flex-direction: column;
     align-items: flex-start;
@@ -796,7 +804,8 @@ blockquote {
   .biography__text,
   .biography__text--alt {
     order: 1;
-    margin-left: 20px;
+    margin-left: 10px;
+    gap: inherit;
   }
   .biography__text--alt {
     display: block;
@@ -804,9 +813,12 @@ blockquote {
     padding: 0;
     margin: 0;
   }
-  .biography__text h2 {
+  .biography__title {
+    order: 4;
+  }
+  .biography__text h5 {
     font-size: 64px;
-    margin-top: 90px;
+    margin-top: 125px;
     order: 3;
     max-width: -moz-max-content;
     max-width: max-content;
@@ -821,19 +833,22 @@ blockquote {
   .biography__text .line {
     display: none;
   }
-  .biography__blockquote {
+  .biography__blockquote-container {
+    margin-top: 28px;
     display: flex;
     width: 540px;
+    order: 3;
+  }
+  .biography__list--alt {
+    display: block;
     order: 2;
   }
-  .biography__blockquote--main {
-    display: none;
-  }
-  .biography__blockquote--alt {
-    display: flex;
+  .biography__blockquote {
+    display: contents;
     margin-top: 30px;
     font-size: 30px;
     line-height: 35px;
+    white-space: pre-line;
   }
   .biography__text--main {
     display: none;
@@ -943,7 +958,7 @@ blockquote {
     order: -1;
     padding: 0;
   }
-  .strengths__content-card-text h2 {
+  .strengths__content-card-text h5 {
     font-size: 46px;
   }
   .strengths__item {
@@ -968,9 +983,17 @@ blockquote {
     order: -1;
   }
 }
-@media (max-width: 675px) {
+@media (max-width: 770px) {
   a {
     font-size: 12px;
+  }
+  .navigation__item {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 730px) {
+  .navigation__item {
+    margin-left: 5px;
   }
 }
 @media (max-width: 585px) {
@@ -1061,13 +1084,13 @@ blockquote {
   }
 }
 @media (max-width: 385px) {
-  h2 {
+  h5 {
     font-size: 60px;
   }
-  .biography__text h2 {
+  .biography__text h5 {
     font-size: 56px;
   }
-  .biography__blockquote--alt {
+  .biography__blockquote {
     font-size: 24px;
   }
   .biography__signature {
