@@ -93,7 +93,7 @@ button {
   align-items: center;
 }
 
-.modal_form {
+.modal__form {
   background-color: rgb(255, 255, 255);
   width: 480px;
   padding: 30px;
@@ -107,7 +107,7 @@ body {
   justify-content: center;
 }
 
-h1 {
+.logo__text {
   font-family: "Playfair Display", sans-serif;
   font-weight: 600;
   font-size: 86px;
@@ -380,7 +380,7 @@ blockquote {
   line-height: 18px;
 }
 
-.designers__card-description__main {
+.designers__card-description--main {
   width: 337px;
   margin-left: 235px;
   line-height: 18px;
@@ -584,7 +584,7 @@ blockquote {
   overflow: hidden;
 }
 
-.modal_form {
+.modal__form {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -598,31 +598,31 @@ blockquote {
   font-family: Arial, sans-serif;
 }
 
-.modal_form h1 {
+.modal__form h1 {
   font-family: Arial, sans-serif;
   font-size: 23px;
   color: #000;
   margin-bottom: 15px;
 }
 
-.modal_form__text {
+.modal__text {
   font-size: 18px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.modal_form__input_contanier {
+.modal__input-container {
   margin-bottom: 15px;
   position: relative;
 }
 
-.modal_form__input_contanier h4 {
+.modal__input-container h4 {
   font-size: 18px;
   color: #333;
   margin-bottom: 5px;
 }
 
-.modal_form__input {
+.modal__input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -631,14 +631,14 @@ blockquote {
   box-sizing: border-box;
 }
 
-.modal_form__input_icon {
+.modal__input_icon {
   font-size: 24px;
   position: absolute;
   right: 14px;
   top: 29px;
 }
 
-.modal_form__textarea {
+.modal__textarea {
   padding: 15px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -649,21 +649,21 @@ blockquote {
   resize: vertical;
 }
 
-.modal_form__input-icon {
+.modal__input-icon {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 6px;
+  top: 44px;
   transform: translateY(-50%);
   color: #999;
   font-size: 14px;
 }
 
-.modal_form__button-container {
+.modal__button-container {
   display: flex;
   justify-content: space-between;
 }
 
-.modal_form__button-container_button {
+.modal__button {
   padding: 10px 20px;
   border: solid #B3B3B3 2px;
   border-radius: 12px;
@@ -673,26 +673,26 @@ blockquote {
   height: 52px;
 }
 
-.modal_form__button-container_button:first-child {
+.modal__button:first-child {
   background: #fff;
   color: #000;
 }
 
-.modal_form__button-container_button:last-child {
+.modal__button:last-child {
   border: none;
   background: #000;
   color: #fff;
 }
 
-.modal_form__input::-moz-placeholder, .modal_form__textarea::-moz-placeholder {
+.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
   font-family: "Roboto", serif;
   color: #999;
   font-size: 14px;
   opacity: 1;
 }
 
-.modal_form__input::placeholder,
-.modal_form__textarea::placeholder {
+.modal__input::placeholder,
+.modal__textarea::placeholder {
   font-family: "Roboto", serif;
   color: #999;
   font-size: 14px;
@@ -865,7 +865,7 @@ blockquote {
   .designers__signature {
     transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
   }
-  .designers__card-description__main {
+  .designers__card-description--main {
     margin-left: 0px;
   }
   .testimonials {
