@@ -33,7 +33,7 @@
   display: grid;
   max-width: $max-width-biography;
   margin:135px auto;
-  grid-template-columns: $testimonials-grid-template;
+  grid-template-columns: 50% 1fr 57%;
 }
 
 .testimonials__cta {

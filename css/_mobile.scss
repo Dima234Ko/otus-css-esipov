@@ -24,7 +24,7 @@
     }
 
     .biography {
-        @include block-margin(0, 130px);
+        @include block-margin(0, 180px);
     }
 
     .biography__signature {
@@ -32,7 +32,7 @@
     }
 
     .biography__text {
-        gap: $spacing-gap-biography-text;
+        gap: none;
     }
 
     .biography__text--alt {
@@ -40,6 +40,7 @@
     }
 
     .biography__blockquote {
+        display: flex;
         width: 85%;
         line-height: 1.4;
     }
@@ -110,17 +111,25 @@
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 396px) {
     
-    h2 {
+    .navigation__item {
+        margin-right: 7vw;
+    }
+
+    .hero__content h1 {
+        font-size: 42px;
+    }
+
+    h5 {
         font-size: 60px;
     }
 
-    .biography__text h2 {
+    .biography__text h5 {
         font-size: 56px;
     }
 
-    .biography__blockquote--alt {
+    .biography__blockquote {
         font-size: 24px;
     }
 
@@ -131,7 +140,5 @@
     .navigation__list {
         width: 110%;
     }
-
-
 
 }

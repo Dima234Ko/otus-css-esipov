@@ -93,7 +93,7 @@ button {
   align-items: center;
 }
 
-.modal_form {
+.modal__form {
   background-color: rgb(255, 255, 255);
   width: 480px;
   padding: 30px;
@@ -107,17 +107,24 @@ body {
   justify-content: center;
 }
 
-h1 {
+.logo__text {
   font-family: "Playfair Display", sans-serif;
   font-weight: 600;
   font-size: 86px;
+  text-transform: none;
 }
 
-h2 {
+h1 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 500;
   font-size: 86px;
   line-height: 1.3;
+}
+
+h2 {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 h3 {
@@ -133,9 +140,10 @@ h4 {
 }
 
 h5 {
-  font-family: "Roboto", serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 86px;
+  line-height: 1.3;
 }
 
 h6 {
@@ -281,8 +289,7 @@ blockquote {
 }
 
 .biography__text--alt,
-.biography__list--alt,
-.biography__blockquote--alt {
+.biography__list--alt {
   display: none;
 }
 
@@ -299,12 +306,8 @@ blockquote {
   order: 2;
 }
 
-.line {
-  position: relative;
-  top: 11px;
-  background-color: black;
-  width: 20px;
-  height: 6px;
+.biography__title {
+  width: 350px;
 }
 
 .biography__text h2 {
@@ -312,9 +315,20 @@ blockquote {
   max-width: 250px;
 }
 
+.biography__text--main::after {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: black;
+  width: 20px;
+  height: 6px;
+}
+
 .biography__text--main {
   order: 2;
-  margin-top: 20px;
+  margin-top: 15px;
+  position: relative;
 }
 
 .biography__text .line {
@@ -322,6 +336,7 @@ blockquote {
 }
 
 .biography__blockquote {
+  margin-top: 32px;
   order: 4;
   max-width: 370px;
 }
@@ -380,7 +395,7 @@ blockquote {
   line-height: 18px;
 }
 
-.designers__card-description__main {
+.designers__card-description--main {
   width: 337px;
   margin-left: 235px;
   line-height: 18px;
@@ -451,7 +466,7 @@ blockquote {
   display: grid;
   max-width: 1165px;
   margin: 135px auto;
-  grid-template-columns: 50% 1fr 45%;
+  grid-template-columns: 50% 1fr 57%;
 }
 
 .testimonials__cta {
@@ -521,7 +536,7 @@ blockquote {
 .strengths__signature {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 210px;
   transform: translate(calc(-50% - 27vw), calc(-50% - 25.5vh));
 }
 
@@ -584,7 +599,7 @@ blockquote {
   overflow: hidden;
 }
 
-.modal_form {
+.modal__form {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -593,36 +608,37 @@ blockquote {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
-  width: 475px;
+  width: 80%;
+  max-width: 475px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
 
-.modal_form h1 {
+.modal__form h1 {
   font-family: Arial, sans-serif;
   font-size: 23px;
   color: #000;
   margin-bottom: 15px;
 }
 
-.modal_form__text {
+.modal__text {
   font-size: 18px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.modal_form__input_contanier {
+.modal__input-container {
   margin-bottom: 15px;
   position: relative;
 }
 
-.modal_form__input_contanier h4 {
+.modal__input-container h4 {
   font-size: 18px;
   color: #333;
   margin-bottom: 5px;
 }
 
-.modal_form__input {
+.modal__input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -631,14 +647,14 @@ blockquote {
   box-sizing: border-box;
 }
 
-.modal_form__input_icon {
+.modal__input_icon {
   font-size: 24px;
   position: absolute;
   right: 14px;
   top: 29px;
 }
 
-.modal_form__textarea {
+.modal__textarea {
   padding: 15px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -649,21 +665,22 @@ blockquote {
   resize: vertical;
 }
 
-.modal_form__input-icon {
+.modal__input-icon {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 6px;
+  top: 44px;
   transform: translateY(-50%);
   color: #999;
   font-size: 14px;
 }
 
-.modal_form__button-container {
+.modal__button-container {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 
-.modal_form__button-container_button {
+.modal__button {
   padding: 10px 20px;
   border: solid #B3B3B3 2px;
   border-radius: 12px;
@@ -673,26 +690,26 @@ blockquote {
   height: 52px;
 }
 
-.modal_form__button-container_button:first-child {
+.modal__button:first-child {
   background: #fff;
   color: #000;
 }
 
-.modal_form__button-container_button:last-child {
+.modal__button:last-child {
   border: none;
   background: #000;
   color: #fff;
 }
 
-.modal_form__input::-moz-placeholder, .modal_form__textarea::-moz-placeholder {
+.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
   font-family: "Roboto", serif;
   color: #999;
   font-size: 14px;
   opacity: 1;
 }
 
-.modal_form__input::placeholder,
-.modal_form__textarea::placeholder {
+.modal__input::placeholder,
+.modal__textarea::placeholder {
   font-family: "Roboto", serif;
   color: #999;
   font-size: 14px;
@@ -700,11 +717,17 @@ blockquote {
 }
 
 @media (max-width: 900px) {
-  h2 {
+  h1 {
     font-size: 70px;
+  }
+  h2 {
+    font-size: 18px;
   }
   h4 {
     font-size: 18px;
+  }
+  h5 {
+    font-size: 70px;
   }
   img {
     width: 100%;
@@ -718,8 +741,8 @@ blockquote {
     justify-content: center;
   }
   .navigation__item {
+    margin-left: 18px;
     position: relative;
-    overflow: hidden;
     display: inline-block;
     width: 1ch;
     white-space: nowrap;
@@ -731,7 +754,7 @@ blockquote {
     display: none;
   }
   .navigation {
-    gap: 7vw;
+    gap: 3vw;
   }
   .navigation__list {
     display: block;
@@ -752,18 +775,21 @@ blockquote {
     margin-top: 1px;
     align-items: start;
     background-size: auto 110%;
+    min-height: 656px;
   }
   .hero__content {
+    gap: 15px;
     min-height: auto;
     height: 270px;
     width: 100%;
     justify-content: flex-start;
   }
-  .hero__content h2 {
+  .hero__content h1 {
+    letter-spacing: -0.7px;
     margin-top: 50px;
   }
   .biography {
-    margin-top: 150px;
+    margin-top: 120px;
     gap: 0;
     flex-direction: column;
     align-items: flex-start;
@@ -780,7 +806,8 @@ blockquote {
   .biography__text,
   .biography__text--alt {
     order: 1;
-    margin-left: 20px;
+    margin-left: 10px;
+    gap: inherit;
   }
   .biography__text--alt {
     display: block;
@@ -788,16 +815,19 @@ blockquote {
     padding: 0;
     margin: 0;
   }
-  .biography__text h2 {
+  .biography__title {
+    order: 4;
+  }
+  .biography__text h5 {
     font-size: 64px;
-    margin-top: 90px;
+    margin-top: 125px;
     order: 3;
     max-width: -moz-max-content;
     max-width: max-content;
   }
   .biography__signature {
-    top: -7.5%;
-    right: 4%;
+    top: -4%;
+    right: -0.5%;
     margin: 0 1% 0 auto;
     writing-mode: horizontal-tb;
     transform: none;
@@ -805,19 +835,22 @@ blockquote {
   .biography__text .line {
     display: none;
   }
-  .biography__blockquote {
+  .biography__blockquote-container {
+    margin-top: 28px;
     display: flex;
     width: 540px;
+    order: 3;
+  }
+  .biography__list--alt {
+    display: block;
     order: 2;
   }
-  .biography__blockquote--main {
-    display: none;
-  }
-  .biography__blockquote--alt {
-    display: flex;
+  .biography__blockquote {
+    display: contents;
     margin-top: 30px;
     font-size: 30px;
     line-height: 35px;
+    white-space: pre-line;
   }
   .biography__text--main {
     display: none;
@@ -865,7 +898,7 @@ blockquote {
   .designers__signature {
     transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
   }
-  .designers__card-description__main {
+  .designers__card-description--main {
     margin-left: 0px;
   }
   .testimonials {
@@ -927,7 +960,7 @@ blockquote {
     order: -1;
     padding: 0;
   }
-  .strengths__content-card-text h2 {
+  .strengths__content-card-text h5 {
     font-size: 46px;
   }
   .strengths__item {
@@ -952,9 +985,17 @@ blockquote {
     order: -1;
   }
 }
-@media (max-width: 675px) {
+@media (max-width: 770px) {
   a {
     font-size: 12px;
+  }
+  .navigation__item {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 730px) {
+  .navigation__item {
+    margin-left: 5px;
   }
 }
 @media (max-width: 585px) {
@@ -976,18 +1017,19 @@ blockquote {
   }
   .biography {
     margin-left: 0;
-    margin-top: 130px;
+    margin-top: 180px;
   }
   .biography__signature {
     top: -10.5%;
   }
   .biography__text {
-    gap: 65px;
+    gap: none;
   }
   .biography__text--alt {
     line-height: 0.9;
   }
   .biography__blockquote {
+    display: flex;
     width: 85%;
     line-height: 1.4;
   }
@@ -1044,14 +1086,20 @@ blockquote {
     gap: 20px;
   }
 }
-@media (max-width: 385px) {
-  h2 {
+@media (max-width: 396px) {
+  .navigation__item {
+    margin-right: 7vw;
+  }
+  .hero__content h1 {
+    font-size: 42px;
+  }
+  h5 {
     font-size: 60px;
   }
-  .biography__text h2 {
+  .biography__text h5 {
     font-size: 56px;
   }
-  .biography__blockquote--alt {
+  .biography__blockquote {
     font-size: 24px;
   }
   .biography__signature {
