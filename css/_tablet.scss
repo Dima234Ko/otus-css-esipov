@@ -145,7 +145,7 @@
     }
 
     .biography__signature {
-        top: -4%;
+        top: -6%;
         right: -0.5%;
         margin: 0 1% 0 auto;
         writing-mode: horizontal-tb;
@@ -203,18 +203,20 @@
     }
 
     .designers {
-        margin-left: $spacing-sm;
+        margin-left: 0px;
         width: calc(100% - #{$spacing-sm});
+        margin-top: 168px;
     }
 
     .designers__card {
         width: $width-designers-img-mobile;
         height: 520px;
+        gap: 25px;
     }
 
     .designers__card img {
         width: $width-designers-img-mobile;
-        height: $height-designers-img-mobile;
+        height: 440px;
     }
 
     .designers__card--main {
@@ -227,7 +229,7 @@
     }
 
     .designers__signature {
-        transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
+        transform: translate(calc(-50% - 41.5vw), calc(-50% - 4.2vh));
     }
 
     .designers__card-description--main {
@@ -264,7 +266,8 @@
     }
 
     .testimonials__cta-blockquote {
-        max-width: $max-width-testimonials-quote-mobile;
+        max-width: 338px;
+        margin-top: -98px;
     }
 
     .testimonials__cta-blockquote h3 {
@@ -274,6 +277,8 @@
     .testimonials__caption {
         flex-direction: row;
         gap: $spacing-testimonials-caption-gap;
+        margin-left: 0px;
+        gap: 16vw;
     }
 
     .testimonials__caption--vertical-text {

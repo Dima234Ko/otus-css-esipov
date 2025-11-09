@@ -869,7 +869,7 @@ blockquote {
     max-width: max-content;
   }
   .biography__signature {
-    top: -4%;
+    top: -6%;
     right: -0.5%;
     margin: 0 1% 0 auto;
     writing-mode: horizontal-tb;
@@ -919,16 +919,18 @@ blockquote {
     left: 0;
   }
   .designers {
-    margin-left: 20px;
+    margin-left: 0px;
     width: calc(100% - 20px);
+    margin-top: 168px;
   }
   .designers__card {
     width: 310px;
     height: 520px;
+    gap: 25px;
   }
   .designers__card img {
     width: 310px;
-    height: 430px;
+    height: 440px;
   }
   .designers__card--main {
     align-items: flex-start;
@@ -938,7 +940,7 @@ blockquote {
     width: auto;
   }
   .designers__signature {
-    transform: translate(calc(-50% - 37.5vw), calc(-50% - 3.2vh));
+    transform: translate(calc(-50% - 41.5vw), calc(-50% - 4.2vh));
   }
   .designers__card-description--main {
     margin-left: 0px;
@@ -969,7 +971,8 @@ blockquote {
     margin: 0 4% 0 auto;
   }
   .testimonials__cta-blockquote {
-    max-width: 376px;
+    max-width: 338px;
+    margin-top: -98px;
   }
   .testimonials__cta-blockquote h3 {
     font-size: 30px;
@@ -977,6 +980,8 @@ blockquote {
   .testimonials__caption {
     flex-direction: row;
     gap: 50px;
+    margin-left: 0px;
+    gap: 16vw;
   }
   .testimonials__caption--vertical-text {
     writing-mode: horizontal-tb;
