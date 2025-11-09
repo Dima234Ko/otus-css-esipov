@@ -1050,7 +1050,7 @@ blockquote {
     margin-left: 5px;
   }
 }
-@media (max-width: 585px) {
+@media (max-width: 605px) {
   h3 {
     line-height: 1.1;
   }
