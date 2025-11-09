@@ -48,7 +48,7 @@
 }
 
 .biography__title {
-  width: 350px;
+  width: 380px;
 }
 
 .biography__text h2 {
@@ -74,6 +74,11 @@
 
 .biography__text .line {
   order: 3;
+}
+
+.biography__author {
+  position: relative;
+  letter-spacing: -0.5px;
 }
 
 .biography__blockquote {

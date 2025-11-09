@@ -1,31 +1,7 @@
 @import 'vars';
 @import 'mixins';
 
-@media (max-width: 900px) {
-    h1 {
-        font-size: 70px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    h4 {
-        font-size: $font-size-h4-mobile;
-    }
-    
-    h5 {
-        font-size: $font-size-h5-mobile;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 0;
-        vertical-align: middle;
-    }
-
+@media (max-width: 960px) {
     .header {
         justify-content: center;
     }
@@ -37,7 +13,7 @@
         width: 1ch;
         white-space: nowrap;
         overflow: hidden;
-        margin-right: 14vw;
+        margin-right: 12vw;
         font-size: 40px;
     }
 
@@ -64,6 +40,37 @@
         color: #A07C72;
     }
 
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: $font-size-h4-mobile;
+    }
+    
+    h5 {
+        font-size: $font-size-h5-mobile;
+    }
+
+    .navigation__item {
+        margin-right: 14.8vw;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 0;
+        vertical-align: middle;
+    }
+
     .hero {
         max-width: 100%;
         box-sizing: border-box;
@@ -88,7 +95,7 @@
     }
 
     .biography {
-        margin-top: 120px;
+        margin-top: 136px;
         gap: 0;
         flex-direction: column;
         align-items: flex-start;
@@ -96,6 +103,7 @@
 
     .biography__img {
         width: 100%;
+        margin-top: 36px;
         max-width: none;
         height: 400px;
         order: 2;
@@ -117,6 +125,12 @@
         font-style: normal;
         padding: 0;
         margin: 0;
+    }
+
+    .biography__author::before {
+        content: '-';
+        color: #000;
+        font-weight: normal;
     }
 
     .biography__title {
@@ -143,7 +157,7 @@
     }
 
     .biography__blockquote-container {
-        margin-top: 28px;
+        margin-top: 21px;
         display: flex;
         width: 540px;
         order: 3;
@@ -177,9 +191,8 @@
     .biography__item {
         display: block;
         position: relative;
-        padding-left: 1.2em;
-        font-weight: 400;
-        font-size: $font-size-item-mobile;
+        font-weight: 500;
+        font-size: 18px;
         font-family: $font-roboto;
     }
 
@@ -327,7 +340,7 @@
     }
 
     .navigation__item {
-        margin-left: 20px;
+        margin-right: 14vw;
     }
 }
 
