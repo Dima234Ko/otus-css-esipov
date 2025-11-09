@@ -262,7 +262,7 @@
     .testimonials__signature {
         writing-mode: inherit;
         transform: none;
-        margin: 0 4% 0 auto;
+        margin: 0 1% 0 auto;
     }
 
     .testimonials__cta-blockquote {
@@ -287,12 +287,12 @@
     }
 
     .strengths {
-        margin-top: $spacing-margin-top-strengths;
-        margin-left: $spacing-sm;
+        margin-top: 102px;
+        margin-left: 0px;
     }
 
     .strengths__signature {
-        transform: translate(calc(-50% - 37.5vw), calc(-50% - 19.5vh));
+        transform: translate(calc(-50% - 40vw), calc(-50% - 24vh));
     }
 
     .strengths__content {
@@ -309,6 +309,7 @@
         width: 201px;
         order: -1;
         padding: 0;
+        gap: 17px;
     }
 
     .strengths__content-card-text h5 {
@@ -320,7 +321,7 @@
     }
 
     .strengths__content-list {
-        line-height: 28px;
+        line-height: 29px;
     }
 
     .footer {

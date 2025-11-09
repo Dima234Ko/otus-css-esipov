@@ -315,6 +315,10 @@ blockquote {
   max-width: 250px;
 }
 
+.biography__blockquote-container {
+  order: 3;
+}
+
 .biography__text--main::after {
   content: "";
   position: absolute;
@@ -542,7 +546,7 @@ blockquote {
   position: absolute;
   left: 50%;
   top: 210px;
-  transform: translate(calc(-50% - 27vw), calc(-50% - 25.5vh));
+  transform: translate(calc(-50% - 35vw), calc(-50% - 26vh));
 }
 
 @media (max-width: 1500px) {
@@ -968,7 +972,7 @@ blockquote {
   .testimonials__signature {
     writing-mode: inherit;
     transform: none;
-    margin: 0 4% 0 auto;
+    margin: 0 1% 0 auto;
   }
   .testimonials__cta-blockquote {
     max-width: 338px;
@@ -988,11 +992,11 @@ blockquote {
     transform: none;
   }
   .strengths {
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 102px;
+    margin-left: 0px;
   }
   .strengths__signature {
-    transform: translate(calc(-50% - 37.5vw), calc(-50% - 19.5vh));
+    transform: translate(calc(-50% - 40vw), calc(-50% - 24vh));
   }
   .strengths__content {
     justify-content: flex-start;
@@ -1006,6 +1010,7 @@ blockquote {
     width: 201px;
     order: -1;
     padding: 0;
+    gap: 17px;
   }
   .strengths__content-card-text h5 {
     font-size: 46px;
@@ -1014,7 +1019,7 @@ blockquote {
     font-size: 24px;
   }
   .strengths__content-list {
-    line-height: 28px;
+    line-height: 29px;
   }
   .footer {
     margin: 70px auto 0;

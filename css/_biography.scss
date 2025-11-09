@@ -56,6 +56,10 @@
   max-width: 250px;
 }
 
+.biography__blockquote-container{
+  order:3;
+}
+
 .biography__text--main::after {
   content: "";
   position: absolute;
