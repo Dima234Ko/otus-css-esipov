@@ -5,7 +5,6 @@
   @include flex-column($gap: null, $align: center);
   @include block-margin(auto, 190px);
   padding-top: $spacing-sm;
-  max-height: $max-height-designers;
   width: 100%;
 }
 

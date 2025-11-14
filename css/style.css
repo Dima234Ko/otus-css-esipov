@@ -239,7 +239,6 @@ blockquote {
   background-image: url(../img/background.jpg);
   background-size: auto 230%;
   width: 100%;
-  aspect-ratio: 2.3333333333;
   min-height: 630px;
   background-position: bottom;
 }
@@ -262,7 +261,6 @@ blockquote {
   align-items: center;
   justify-content: center;
   max-width: 1165px;
-  max-height: 840px;
   margin: auto;
   margin-top: 150px;
   position: relative;
@@ -275,7 +273,6 @@ blockquote {
 
 .biography__img {
   max-width: 571px;
-  max-height: 840px;
   order: 1;
 }
 
@@ -283,7 +280,6 @@ blockquote {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-height: 840px;
   line-height: 1.2;
   order: 3;
 }
@@ -361,7 +357,6 @@ blockquote {
   margin-left: auto;
   margin-top: 190px;
   padding-top: 20px;
-  max-height: 677px;
   width: 100%;
 }
 
@@ -824,8 +819,7 @@ blockquote {
   }
   .hero__content {
     gap: 15px;
-    min-height: auto;
-    height: 270px;
+    min-height: 270px;
     width: 100%;
     justify-content: flex-start;
   }
@@ -834,7 +828,7 @@ blockquote {
     margin-top: 50px;
   }
   .biography {
-    margin-top: 136px;
+    margin-top: 83px;
     gap: 0;
     flex-direction: column;
     align-items: flex-start;
@@ -879,7 +873,7 @@ blockquote {
   .biography__signature {
     top: -6%;
     right: -0.5%;
-    margin: 0 1% 0 auto;
+    margin: 7% 4%;
     writing-mode: horizontal-tb;
     transform: none;
   }
@@ -929,11 +923,11 @@ blockquote {
   .designers {
     margin-left: 0px;
     width: calc(100% - 20px);
-    margin-top: 168px;
+    margin-top: 112px;
   }
   .designers__card {
     width: 310px;
-    height: 520px;
+    min-height: 520px;
     gap: 25px;
   }
   .designers__card img {

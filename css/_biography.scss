@@ -4,7 +4,6 @@
 .biography {
   @include flex-row(125px, center, center);
   max-width: $max-width-biography;
-  max-height: $max-height-biography;
   margin: auto;
   margin-top: $spacing-xxl;
   position: relative;
@@ -17,13 +16,11 @@
 
 .biography__img {
   max-width: $biography-img-width;
-  max-height: $max-height-biography;
   order: 1;
 }
 
 .biography__text {
   @include flex-column(25px);
-  max-height: $max-height-biography;
   line-height: $line-height-1-2;
   order: 3;
 }
