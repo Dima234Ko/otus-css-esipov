@@ -24,11 +24,15 @@
     }
 
     .biography {
-        @include block-margin(0, 180px);
+        @include block-margin(0, 81px);
     }
 
     .biography__signature {
-        top: -10.5%;
+        top: -3%;
+    }
+
+    .biography__title {
+        width: auto;
     }
 
     .biography__text {
@@ -39,10 +43,15 @@
         line-height: 0.9;
     }
 
+    .biography__blockquote-container {
+        width: 100%;
+    }
+
     .biography__blockquote {
+        margin-top: 0px;
         display: flex;
-        width: 85%;
-        line-height: 1.4;
+        line-height: 1.2;
+        max-width: none;
     }
 
     .biography__text h2 {
@@ -50,21 +59,24 @@
         line-height: 0.7;
     }
 
+    .biography__title h5 {
+        margin-top: 54px;
+    }
+
     .biography__img {
         margin-top: 20px;
     }
 
     .designers {
-        margin: 150px 0 0;
-        padding-left: $spacing-sm;
+        margin: 125px 0 0;
     }
 
     .designers__signature {
-        transform: translate(calc(-50% - 31.5vw), calc(-50% - 3.5vh));
+        transform: translate(calc(-50% - 36.5vw), calc(-50% - 4vh));
     }
 
     .testimonials {
-        @include block-margin(20);
+        margin: 165px 20px 0;
     }
 
     .testimonials__cta {
@@ -73,25 +85,28 @@
     }
 
     .testimonials__signature {
-        transform: (calc(-50% - 29.5vw), calc(-50% - 19.5vh));
+        transform: translate(calc(50% - 13.5vw), calc(-50% + -20vw));
     }
 
     .testimonials__cta-image {
-        width: 91%;
+        width: 100%;
     }
 
     .testimonials__caption {
         flex-wrap: wrap;
-        margin-left: $spacing-sm;
         gap: 30px;
     }
 
+    .testimonials__caption--vertical-text {
+        margin-right: 55px;
+    }
+
     .strengths {
-        margin-left: $spacing-sm;
+        margin-left: 0px;
     }
 
     .strengths__signature {
-        transform: translate(calc(-50% - 31.5vw), calc(-50% - 20.5vh));
+        transform: translate(calc(-50% - 35vw), calc(-50% - 23vh));
     }
 
     .strengths__content-list {
@@ -135,6 +150,18 @@
 
     .biography__signature {
         top: -5%
+    }
+
+    .designers__signature {
+        transform: translate(calc(-50% - 33.5vw), calc(-50% - 4vh));
+    }
+
+    .testimonials__signature {
+        transform: translate(calc(50% - 20.5vw), calc(-50% - 28vw));
+    }
+
+    .strengths__signature {
+        transform: translate(calc(-50% - 29vw), calc(-50% - 23vh));
     }
 
     .navigation__list {
