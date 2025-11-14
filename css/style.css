@@ -491,6 +491,10 @@ blockquote {
 
 .testimonials__cta-blockquote {
   max-width: 216px;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.18;
 }
 
 .strengths {
@@ -643,7 +647,7 @@ blockquote {
   z-index: 1;
 }
 
-.modal__form h1 {
+.modal__title {
   font-family: Arial, sans-serif;
   font-size: 23px;
   color: #000;
@@ -977,8 +981,6 @@ blockquote {
   .testimonials__cta-blockquote {
     max-width: 338px;
     margin-top: -98px;
-  }
-  .testimonials__cta-blockquote h3 {
     font-size: 30px;
   }
   .testimonials__caption {
