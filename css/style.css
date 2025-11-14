@@ -363,7 +363,7 @@ blockquote {
 .designers__signature {
   position: absolute;
   left: 50%;
-  transform: translate(calc(-50% - 35.5vw), calc(-50% - 3.2vh));
+  transform: translate(calc(-50% - 36vw), calc(-50% - 5vh));
 }
 
 .designers__slider {
@@ -506,7 +506,6 @@ blockquote {
   display: flex;
   flex-direction: row;
   gap: 0px;
-  max-height: 613px;
   justify-content: center;
   width: 98%;
   overflow-x: auto;
@@ -525,7 +524,6 @@ blockquote {
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  width: 450px;
   padding: 0 20px;
 }
 
@@ -1003,7 +1001,6 @@ blockquote {
     width: 310px;
   }
   .strengths__content-card-text {
-    width: 201px;
     order: -1;
     padding: 0;
     gap: 17px;

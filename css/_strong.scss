@@ -11,7 +11,6 @@
 
 .strengths__content {
   @include flex-row(0px, null);
-  max-height: $strengths-max-height;
   justify-content: center;
   width: 98%;
   overflow-x: auto;
@@ -27,7 +26,6 @@
 
 .strengths__content-card-text {
   @include flex-column(30px, center);
-  width: $strengths-card-text-width;
   padding: 0 20px;
 }
 
