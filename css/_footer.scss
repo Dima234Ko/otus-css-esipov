@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .footer {
-  @include block-margin(auto, 135px);
+  @include block-margin(auto, 115px);
   background-color: $color-black;
   color: $color-white;
 }
@@ -10,7 +10,7 @@
 .footer__text {
   @include flex-row($align: center, $justify: space-between);
   margin: 0 $spacing-sm;
-  height: $footer-height;
+  min-height: $footer-height;
 }
 
 .footer__contact {

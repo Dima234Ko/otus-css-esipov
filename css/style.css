@@ -543,7 +543,7 @@ blockquote {
   position: absolute;
   left: 50%;
   top: 210px;
-  transform: translate(calc(-50% - 35vw), calc(-50% - 26vh));
+  transform: translate(calc(-50% - 27vw), calc(-50% - 26vh));
 }
 
 @media (max-width: 1500px) {
@@ -558,7 +558,7 @@ blockquote {
 }
 .footer {
   margin-left: auto;
-  margin-top: 135px;
+  margin-top: 115px;
   background-color: black;
   color: white;
 }
@@ -569,7 +569,7 @@ blockquote {
   align-items: center;
   justify-content: space-between;
   margin: 0 20px;
-  height: 190px;
+  min-height: 165px;
 }
 
 .footer__contact {
@@ -1042,6 +1042,9 @@ blockquote {
   .navigation__item {
     margin-left: 5px;
   }
+  .footer__product {
+    margin-left: 65%;
+  }
 }
 @media (max-width: 605px) {
   h3 {
@@ -1130,7 +1133,7 @@ blockquote {
     gap: 22px;
   }
   .footer__product {
-    margin-left: 62%;
+    margin-left: 55%;
   }
   .footer__text {
     display: flex;
