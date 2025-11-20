@@ -238,6 +238,10 @@ blockquote {
 .navigation__link:hover {
   text-decoration: underline;
 }
+.navigation__link:hover::after {
+  transform: scaleX(2);
+  transform-origin: left;
+}
 
 .hero {
   display: flex;
@@ -713,6 +717,7 @@ blockquote {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-container {
@@ -737,6 +742,7 @@ blockquote {
   cursor: pointer;
   transition: all 0.25s ease;
   outline: none;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s ease, box-shadow 0.5s ease;
 }
 .modal__button:hover {
   border-color: #fb923c !important;
@@ -775,35 +781,62 @@ blockquote {
   color: #fff;
 }
 
-.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
-  font-family: "Roboto", serif;
-  color: #999;
-  font-size: 14px;
-  opacity: 1;
+.modal__input,
+.modal__textarea {
+  width: 100%;
+  padding: 12px 44px 12px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: none;
+  transition: background-color 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, color 0.28s ease;
 }
-
+.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #999999;
+  opacity: 1;
+  -moz-transition: color 0.28s ease;
+  transition: color 0.28s ease;
+}
 .modal__input::placeholder,
 .modal__textarea::placeholder {
-  font-family: "Roboto", serif;
-  color: #999;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  color: #999999;
   opacity: 1;
+  transition: color 0.28s ease;
 }
-
 .modal__input:hover,
 .modal__textarea:hover {
   background-color: #f9f9f9;
   border-color: #e5e7eb;
   box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.08);
 }
-
+.modal__input:hover + .modal__input-icon,
+.modal__textarea:hover + .modal__input-icon {
+  color: #A07C72;
+  transition: color 0.3s ease;
+}
 .modal__input:focus,
 .modal__textarea:focus {
+  background-color: #ffffff;
   border-color: #E0B59F;
+  box-shadow: 0 0 0 4px rgba(224, 181, 159, 0.25);
 }
 .modal__input:focus + .modal__input-icon,
 .modal__textarea:focus + .modal__input-icon {
   color: #A07C72;
+}
+.modal__input:focus::-moz-placeholder, .modal__textarea:focus::-moz-placeholder {
+  color: #b3b3b3;
+}
+.modal__input:focus::placeholder,
+.modal__textarea:focus::placeholder {
+  color: #b3b3b3;
 }
 
 @media (max-width: 960px) {
@@ -1229,4 +1262,7 @@ blockquote {
   .navigation__list {
     width: 110%;
   }
+}
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */
