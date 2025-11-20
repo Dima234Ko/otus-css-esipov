@@ -42,6 +42,14 @@ button {
   cursor: pointer;
 }
 
+textarea:focus,
+input:focus {
+  outline: none !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+}
+
 @font-face {
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-Medium.ttf") format("truetype");
@@ -714,13 +722,46 @@ blockquote {
 }
 
 .modal__button {
-  padding: 10px 20px;
-  border: solid #B3B3B3 2px;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 212px;
   height: 52px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  background-color: #ffffff;
+  border: 2px solid #b3b3b3;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+}
+.modal__button:hover {
+  border-color: #fb923c !important;
+  background-color: #D7C8C1 !important;
+}
+.modal__button:focus-visible {
+  border-color: #b3b3b3;
+}
+.modal__button:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #fb923c;
+  border-radius: 14px;
+  pointer-events: none;
+}
+.modal__button:active {
+  background-color: #D7C8C1;
+  border-color: #fb923c;
+}
+.modal__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: #d1d5db;
+  background-color: #f3f4f6;
 }
 
 .modal__button:first-child {
@@ -747,6 +788,22 @@ blockquote {
   color: #999;
   font-size: 14px;
   opacity: 1;
+}
+
+.modal__input:hover,
+.modal__textarea:hover {
+  background-color: #f9f9f9;
+  border-color: #e5e7eb;
+  box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.08);
+}
+
+.modal__input:focus,
+.modal__textarea:focus {
+  border-color: #E0B59F;
+}
+.modal__input:focus + .modal__input-icon,
+.modal__textarea:focus + .modal__input-icon {
+  color: #A07C72;
 }
 
 @media (max-width: 960px) {
