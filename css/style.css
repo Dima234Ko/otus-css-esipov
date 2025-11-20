@@ -42,6 +42,14 @@ button {
   cursor: pointer;
 }
 
+textarea:focus,
+input:focus {
+  outline: none !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+}
+
 @font-face {
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-Medium.ttf") format("truetype");
@@ -747,6 +755,15 @@ blockquote {
   color: #999;
   font-size: 14px;
   opacity: 1;
+}
+
+.modal__input:focus,
+.modal__textarea:focus {
+  border-color: #E0B59F;
+}
+.modal__input:focus + .modal__input-icon,
+.modal__textarea:focus + .modal__input-icon {
+  color: #A07C72;
 }
 
 @media (max-width: 960px) {

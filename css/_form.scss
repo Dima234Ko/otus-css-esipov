@@ -140,3 +140,17 @@
     font-size: 14px;
     opacity: 1; 
 }
+
+// .modal__input:hover,
+// .modal__textarea:hover {
+//     border-color: #fb923c;
+//     box-shadow: 0 0 6px #fb923c (74, 142, 255, 0.4);
+// }
+
+.modal__input:focus,
+.modal__textarea:focus {
+    border-color: #E0B59F;
+    + .modal__input-icon {
+        color: #A07C72;
+    }
+}
