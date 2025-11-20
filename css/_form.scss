@@ -113,14 +113,54 @@
 }
 
 .modal__button {
-    padding: 10px 20px;
-    border: solid #B3B3B3 2px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 212px;
     height: 52px;
-}
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    background-color: #ffffff;
+    border: 2px solid #b3b3b3;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    outline: none;
+
+    &:hover {
+      border-color: #fb923c!important;                   
+      background-color: #D7C8C1 !important;
+    }
+  
+    &:focus-visible {
+        border-color: #b3b3b3;
+    
+        &::after {
+          content: "";
+          position: absolute;
+          inset: -4px;                    
+          border: 2px solid #fb923c;
+          border-radius: 14px;            
+          pointer-events: none;
+        }
+    }
+  
+    &:active {
+      background-color: #D7C8C1;
+      border-color: #fb923c;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      border-color: #d1d5db;
+      background-color: #f3f4f6;
+    }
+  }
+
+
 
 .modal__button:first-child {
     background: #fff;
@@ -141,11 +181,12 @@
     opacity: 1; 
 }
 
-// .modal__input:hover,
-// .modal__textarea:hover {
-//     border-color: #fb923c;
-//     box-shadow: 0 0 6px #fb923c (74, 142, 255, 0.4);
-// }
+.modal__input:hover,
+.modal__textarea:hover {
+  background-color: #f9f9f9;
+  border-color: #e5e7eb;
+  box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.08);
+}
 
 .modal__input:focus,
 .modal__textarea:focus {
